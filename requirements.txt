@@ -1,0 +1,6 @@
+torch
+transformers
+torchaudio
+scikit-learn
+numpy
+tqdm
