@@ -2,7 +2,7 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from models import AudioEncoder, TextEncoder, FusionLayer, Classifier
-from models.classifier import OpenMaxClassifier
+from models.classifier import OpenMaxClassifier, AdvancedOpenMaxClassifier
 from models.cross_attention import CrossModalAttention
 from models.pooling import AttentiveStatsPooling
 from models.losses import LabelSmoothingCrossEntropy, ClassBalancedFocalLoss, SupConLoss
@@ -52,13 +52,28 @@ def main():
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
     fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
-    classifier = OpenMaxClassifier(512, NUM_LABELS).to(device)
+    classifier = AdvancedOpenMaxClassifier(
+        input_dim=512, 
+        num_labels=NUM_LABELS, 
+        num_layers=35,  # Deep architecture
+        base_dim=512, 
+        dropout=0.15  # Higher dropout for regularization
+    ).to(device)
     prototypes = PrototypeMemory(NUM_LABELS, 512).to(device)
 
-    params = list(audio_encoder.parameters()) + list(text_encoder.parameters()) + \
-             list(cross.parameters()) + list(pool_a.parameters()) + list(pool_t.parameters()) + \
-             list(fusion.parameters()) + list(classifier.parameters()) + list(prototypes.parameters())
-    optimizer = optim.AdamW(params, lr=args.lr, weight_decay=0.05)
+    # Advanced optimizer with different learning rates for different components
+    optimizer = optim.AdamW([
+        {'params': audio_encoder.parameters(), 'lr': args.lr * 0.1, 'weight_decay': 0.025},
+        {'params': text_encoder.parameters(), 'lr': args.lr * 0.1, 'weight_decay': 0.025},
+        {'params': cross.parameters(), 'lr': args.lr, 'weight_decay': 0.05},
+        {'params': pool_a.parameters(), 'lr': args.lr, 'weight_decay': 0.05},
+        {'params': pool_t.parameters(), 'lr': args.lr, 'weight_decay': 0.05},
+        {'params': fusion.parameters(), 'lr': args.lr, 'weight_decay': 0.05},
+        {'params': classifier.deep_classifier.parameters(), 'lr': args.lr * 1.5, 'weight_decay': 0.06},
+        {'params': classifier.anchor_clustering.parameters(), 'lr': args.lr * 2.0, 'weight_decay': 0.04},
+        {'params': classifier.uncertainty_head.parameters(), 'lr': args.lr * 1.0, 'weight_decay': 0.05},
+        {'params': prototypes.parameters(), 'lr': args.lr, 'weight_decay': 0.05},
+    ], weight_decay=0.05)
     ce_smooth = LabelSmoothingCrossEntropy(0.1)
     cb_focal = ClassBalancedFocalLoss(beta=0.9999, gamma=2.0, num_classes=NUM_LABELS)
     supcon = SupConLoss(temperature=0.07)
@@ -103,11 +118,19 @@ def main():
             t_vec = pool_t(t_enh, t_mask)
             fused = fusion(a_vec, t_vec)
             with autocast(enabled=args.use_amp):
-                logits = classifier(fused, use_openmax=False)  # Don't use OpenMax during training
+                logits, uncertainty, anchor_loss = classifier(fused, use_openmax=False, return_uncertainty=True)
                 # Start with simpler loss combination
                 ce_loss = ce_smooth(logits, labels)
                 focal_loss = cb_focal(logits, labels)
                 loss = ce_loss + 0.3 * focal_loss  # Reduced focal weight
+                
+                # Add anchor clustering loss for better class separation
+                loss = loss + 0.1 * anchor_loss
+                
+                # Add uncertainty regularization (encourage low uncertainty for correct predictions)
+                uncertainty_loss = torch.mean(uncertainty * (labels == logits.argmax(dim=1)).float())
+                loss = loss + 0.05 * uncertainty_loss
+                
                 # Add prototype loss with smaller weight
                 if args.proto_weight > 0:
                     proto_loss = prototypes.prototype_loss(fused, labels)
@@ -150,7 +173,7 @@ def main():
         if epoch == args.epochs - 1:  # After last epoch
             print("Fitting Weibull distributions for OpenMax...")
             classifier.eval()
-            all_activations = []
+            all_features = []
             all_val_labels = []
             
             with torch.no_grad():
@@ -163,19 +186,32 @@ def main():
                     t_vec = pool_t(t_enh, t_mask)
                     fused = fusion(a_vec, t_vec)
                     
-                    # Get activations from penultimate layer
-                    activations = fused
-                    for i, layer in enumerate(classifier.net[:-1]):
-                        activations = layer(activations)
+                    # Get features from deep classifier (before final classification layer)
+                    features = fused
+                    for i, layer in enumerate(classifier.deep_classifier.input_projection):
+                        features = layer(features)
                     
-                    all_activations.append(activations)
+                    for i, (residual_block, layer_norm) in enumerate(zip(
+                        classifier.deep_classifier.residual_layers, 
+                        classifier.deep_classifier.layer_norms
+                    )):
+                        features = layer_norm(features)
+                        features = residual_block(features)
+                    
+                    # Get features before final classification layer
+                    features = classifier.deep_classifier.output_projection[0](features)
+                    features = classifier.deep_classifier.output_projection[1](features)
+                    features = classifier.deep_classifier.output_projection[2](features)
+                    features = classifier.deep_classifier.output_projection[3](features)
+                    
+                    all_features.append(features)
                     all_val_labels.append(labels)
             
-            all_activations = torch.cat(all_activations, dim=0)
+            all_features = torch.cat(all_features, dim=0)
             all_val_labels = torch.cat(all_val_labels, dim=0)
             
             # Fit Weibull parameters
-            classifier.fit_weibull(all_activations, all_val_labels)
+            classifier.fit_weibull(all_features, all_val_labels)
 
         # Save checkpoint
         os.makedirs(args.save_dir, exist_ok=True)
