@@ -3,6 +3,7 @@ import torch
 import numpy as np
 from torch.utils.data import DataLoader
 from models import AudioEncoder, TextEncoder, FusionLayer, Classifier
+from models.classifier import OpenMaxClassifier
 from models.cross_attention import CrossModalAttention
 from models.pooling import AttentiveStatsPooling
 from models.prototypes import PrototypeMemory
@@ -90,7 +91,7 @@ def main():
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
     fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
-    classifier = Classifier(512, num_labels=4).to(device)
+    classifier = OpenMaxClassifier(512, num_labels=4).to(device)
     prototypes = PrototypeMemory(4, 512).to(device)
 
     # Load checkpoint
@@ -137,7 +138,7 @@ def main():
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
                 fused = fusion(a_vec, t_vec)
-                logits = classifier(fused)
+                logits = classifier(fused, use_openmax=False)  # Don't use OpenMax for calibration
                 
                 val_logits.append(logits)
                 val_labels.append(labels)
@@ -182,9 +183,9 @@ def main():
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
                 fused = fusion(a_vec, t_vec)
-                logits = classifier(fused)
+                logits = classifier(fused, use_openmax=True)  # Use OpenMax during evaluation
             
-            # Apply temperature scaling
+            # Apply temperature scaling (optional, OpenMax already provides calibration)
             if args.calibrate:
                 logits = temperature_scaling(logits, optimal_temp)
             

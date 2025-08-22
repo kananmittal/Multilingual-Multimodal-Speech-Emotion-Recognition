@@ -8,7 +8,7 @@ A state-of-the-art multimodal emotion recognition system that combines audio and
 - **Cross-Modal Attention**: Bidirectional attention between audio and text modalities
 - **Advanced Loss Functions**: Label smoothing, class-balanced focal loss, supervised contrastive learning
 - **Prototype Memory**: Learnable emotion prototypes for better clustering
-- **OOD Detection**: Energy-based out-of-distribution detection
+- **OOD Detection**: OpenMax-based out-of-distribution detection with Weibull fitting
 - **Test-Time Augmentation**: Speed perturbation and noise addition for robust inference
 - **Temperature Scaling**: Calibrated probability outputs
 
@@ -34,8 +34,8 @@ A state-of-the-art multimodal emotion recognition system that combines audio and
 ### 4. Fusion & Classification
 - **Projection**: MLP layers to common dimension (512)
 - **Gated Fusion**: Learnable weights for modality combination
-- **Classifier**: 2-layer MLP with dropout
-- **Output**: 4 emotion classes (neutral, happy, sad, angry)
+- **Classifier**: OpenMax classifier with Weibull fitting
+- **Output**: 4 emotion classes + uncertainty estimation
 
 ## 📊 Supported Datasets
 
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 │   │   ├── cross_attention.py    # Cross-modal attention
 │   │   ├── pooling.py           # Attentive statistics pooling
 │   │   ├── fusion.py            # Gated fusion layer
-│   │   ├── classifier.py        # MLP classifier
+│   │   ├── classifier.py        # OpenMax classifier with Weibull fitting
 │   │   ├── prototypes.py        # Prototype memory
 │   │   └── losses.py            # Advanced loss functions
 │   ├── data/

@@ -2,6 +2,7 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from models import AudioEncoder, TextEncoder, FusionLayer, Classifier
+from models.classifier import OpenMaxClassifier
 from models.cross_attention import CrossModalAttention
 from models.pooling import AttentiveStatsPooling
 from models.losses import LabelSmoothingCrossEntropy, ClassBalancedFocalLoss, SupConLoss
@@ -51,7 +52,7 @@ def main():
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
     fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
-    classifier = Classifier(512, NUM_LABELS).to(device)
+    classifier = OpenMaxClassifier(512, NUM_LABELS).to(device)
     prototypes = PrototypeMemory(NUM_LABELS, 512).to(device)
 
     params = list(audio_encoder.parameters()) + list(text_encoder.parameters()) + \
@@ -102,7 +103,7 @@ def main():
             t_vec = pool_t(t_enh, t_mask)
             fused = fusion(a_vec, t_vec)
             with autocast(enabled=args.use_amp):
-                logits = classifier(fused)
+                logits = classifier(fused, use_openmax=False)  # Don't use OpenMax during training
                 # Start with simpler loss combination
                 ce_loss = ce_smooth(logits, labels)
                 focal_loss = cb_focal(logits, labels)
@@ -144,6 +145,37 @@ def main():
 
         f1 = weighted_f1(torch.stack(all_preds), torch.stack(all_labels))
         print(f"Epoch {epoch} F1: {f1}")
+
+        # Fit Weibull distributions for OpenMax after each epoch
+        if epoch == args.epochs - 1:  # After last epoch
+            print("Fitting Weibull distributions for OpenMax...")
+            classifier.eval()
+            all_activations = []
+            all_val_labels = []
+            
+            with torch.no_grad():
+                for audio_list, text_list, labels in val_loader:
+                    labels = labels.to(device)
+                    a_seq, a_mask = audio_encoder(audio_list)
+                    t_seq, t_mask = text_encoder(text_list)
+                    a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
+                    a_vec = pool_a(a_enh, a_mask)
+                    t_vec = pool_t(t_enh, t_mask)
+                    fused = fusion(a_vec, t_vec)
+                    
+                    # Get activations from penultimate layer
+                    activations = fused
+                    for i, layer in enumerate(classifier.net[:-1]):
+                        activations = layer(activations)
+                    
+                    all_activations.append(activations)
+                    all_val_labels.append(labels)
+            
+            all_activations = torch.cat(all_activations, dim=0)
+            all_val_labels = torch.cat(all_val_labels, dim=0)
+            
+            # Fit Weibull parameters
+            classifier.fit_weibull(all_activations, all_val_labels)
 
         # Save checkpoint
         os.makedirs(args.save_dir, exist_ok=True)
