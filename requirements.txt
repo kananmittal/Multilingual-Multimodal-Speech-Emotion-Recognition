@@ -8,3 +8,6 @@ librosa
 webrtcvad
 langdetect
 scipy
+noisereduce
+pyloudnorm
+soundfile

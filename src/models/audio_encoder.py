@@ -3,10 +3,12 @@ import torch.nn as nn
 from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor
 from .pooling import AttentiveStatsPooling
 from .quality_gates import FrontEndQualityGates, create_quality_gates
+from .audio_conditioning import AudioConditioningModule, create_audio_conditioning
 
 class AudioEncoder(nn.Module):
     def __init__(self, model_name="facebook/wav2vec2-base", adapter_dim: int = 256, freeze_base: bool = True, 
-                 use_quality_gates: bool = True, vad_method: str = "webrtc"):
+                 use_quality_gates: bool = True, vad_method: str = "webrtc",
+                 use_audio_conditioning: bool = True):
         super().__init__()
         self.feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(model_name)
         self.encoder = Wav2Vec2Model.from_pretrained(model_name)
@@ -29,6 +31,17 @@ class AudioEncoder(nn.Module):
                 nn.ReLU(),
                 nn.Dropout(0.1)
             )
+        
+        # Initialize audio conditioning
+        self.use_audio_conditioning = use_audio_conditioning
+        if use_audio_conditioning:
+            self.audio_conditioning = create_audio_conditioning()
+            # Conditioning feature fusion layer
+            self.conditioning_fusion = nn.Sequential(
+                nn.Linear(hid + 12, hid),  # 12 conditioning features
+                nn.ReLU(),
+                nn.Dropout(0.1)
+            )
 
     def forward(self, audio_waveforms, texts=None):
         """
@@ -39,6 +52,7 @@ class AudioEncoder(nn.Module):
         batch_seqs = []
         batch_masks = []
         quality_features_list = []
+        conditioning_features_list = []
         
         for i, audio in enumerate(audio_waveforms):
             # Apply quality gates if enabled
@@ -56,6 +70,14 @@ class AudioEncoder(nn.Module):
             else:
                 processed_audio = audio
                 quality_features_list.append(torch.zeros(8, device=audio.device))
+            
+            # Apply audio conditioning if enabled
+            if self.use_audio_conditioning:
+                conditioned_audio, conditioning_features = self.audio_conditioning(processed_audio)
+                processed_audio = conditioned_audio
+                conditioning_features_list.append(conditioning_features.conditioning_features)
+            else:
+                conditioning_features_list.append(torch.zeros(12, device=audio.device))
             
             # Process single audio file
             inputs = self.feature_extractor(
@@ -80,13 +102,31 @@ class AudioEncoder(nn.Module):
             seq = outputs.last_hidden_state  # [1, seq, hidden]
             seq = seq + self.adapter(seq)
             
-            # Fuse quality features if enabled
-            if self.use_quality_gates:
-                # Expand quality features to match sequence length
-                quality_features = quality_features_list[i].unsqueeze(0).expand(seq.size(1), -1)
-                # Concatenate and fuse
-                seq = torch.cat([seq.squeeze(0), quality_features], dim=-1)
-                seq = self.quality_fusion(seq).unsqueeze(0)
+            # Fuse quality and conditioning features if enabled
+            if self.use_quality_gates or self.use_audio_conditioning:
+                # Expand features to match sequence length
+                if self.use_quality_gates:
+                    quality_features = quality_features_list[i].unsqueeze(0).expand(seq.size(1), -1)
+                else:
+                    quality_features = torch.zeros(seq.size(1), 8, device=seq.device)
+                
+                if self.use_audio_conditioning:
+                    conditioning_features = conditioning_features_list[i].unsqueeze(0).expand(seq.size(1), -1)
+                else:
+                    conditioning_features = torch.zeros(seq.size(1), 12, device=seq.device)
+                
+                # Concatenate all features
+                all_features = torch.cat([quality_features, conditioning_features], dim=-1)
+                seq = torch.cat([seq.squeeze(0), all_features], dim=-1)
+                
+                # Apply appropriate fusion
+                if self.use_quality_gates and self.use_audio_conditioning:
+                    # Combined fusion for both quality and conditioning features
+                    seq = self.quality_fusion(seq).unsqueeze(0)
+                elif self.use_quality_gates:
+                    seq = self.quality_fusion(seq).unsqueeze(0)
+                elif self.use_audio_conditioning:
+                    seq = self.conditioning_fusion(seq).unsqueeze(0)
             
             mask = inputs.get("attention_mask", None)
             if mask is not None:
