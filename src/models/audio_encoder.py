@@ -2,9 +2,11 @@ import torch
 import torch.nn as nn
 from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor
 from .pooling import AttentiveStatsPooling
+from .quality_gates import FrontEndQualityGates, create_quality_gates
 
 class AudioEncoder(nn.Module):
-    def __init__(self, model_name="facebook/wav2vec2-base", adapter_dim: int = 256, freeze_base: bool = True):
+    def __init__(self, model_name="facebook/wav2vec2-base", adapter_dim: int = 256, freeze_base: bool = True, 
+                 use_quality_gates: bool = True, vad_method: str = "webrtc"):
         super().__init__()
         self.feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(model_name)
         self.encoder = Wav2Vec2Model.from_pretrained(model_name)
@@ -16,19 +18,48 @@ class AudioEncoder(nn.Module):
             nn.Linear(hid, adapter_dim), nn.ReLU(), nn.Linear(adapter_dim, hid)
         )
         self.pool = AttentiveStatsPooling(hid)
+        
+        # Initialize quality gates
+        self.use_quality_gates = use_quality_gates
+        if use_quality_gates:
+            self.quality_gates = create_quality_gates(vad_method=vad_method)
+            # Quality feature fusion layer
+            self.quality_fusion = nn.Sequential(
+                nn.Linear(hid + 8, hid),  # 8 quality features
+                nn.ReLU(),
+                nn.Dropout(0.1)
+            )
 
-    def forward(self, audio_waveforms):
+    def forward(self, audio_waveforms, texts=None):
         """
         audio_waveforms: List[1D Tensor] of variable lengths
+        texts: Optional list of text strings for language detection
         """
         # Process each audio file individually to avoid padding issues
         batch_seqs = []
         batch_masks = []
+        quality_features_list = []
         
-        for audio in audio_waveforms:
+        for i, audio in enumerate(audio_waveforms):
+            # Apply quality gates if enabled
+            if self.use_quality_gates:
+                text = texts[i] if texts and i < len(texts) else None
+                processed_audio, quality_metrics, should_process = self.quality_gates(audio, text)
+                
+                # Store quality features for fusion
+                quality_features_list.append(quality_metrics.quality_features)
+                
+                # If quality gates recommend rejection, use zero audio
+                if not should_process:
+                    # Create zero audio of same length
+                    processed_audio = torch.zeros_like(audio)
+            else:
+                processed_audio = audio
+                quality_features_list.append(torch.zeros(8, device=audio.device))
+            
             # Process single audio file
             inputs = self.feature_extractor(
-                [audio],
+                [processed_audio],
                 sampling_rate=16000,
                 return_tensors="pt",
                 padding=True,
@@ -48,6 +79,15 @@ class AudioEncoder(nn.Module):
             outputs = self.encoder(**inputs)
             seq = outputs.last_hidden_state  # [1, seq, hidden]
             seq = seq + self.adapter(seq)
+            
+            # Fuse quality features if enabled
+            if self.use_quality_gates:
+                # Expand quality features to match sequence length
+                quality_features = quality_features_list[i].unsqueeze(0).expand(seq.size(1), -1)
+                # Concatenate and fuse
+                seq = torch.cat([seq.squeeze(0), quality_features], dim=-1)
+                seq = self.quality_fusion(seq).unsqueeze(0)
+            
             mask = inputs.get("attention_mask", None)
             if mask is not None:
                 mask = mask.to(seq.dtype)

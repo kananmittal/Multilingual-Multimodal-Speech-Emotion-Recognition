@@ -4,3 +4,7 @@ torchaudio
 scikit-learn
 numpy
 tqdm
+librosa
+webrtcvad
+langdetect
+scipy

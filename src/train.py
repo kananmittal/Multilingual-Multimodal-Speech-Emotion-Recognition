@@ -111,7 +111,7 @@ def main():
                     aug_list.append(w)
                 audio_list = aug_list
 
-            a_seq, a_mask = audio_encoder(audio_list)
+            a_seq, a_mask = audio_encoder(audio_list, text_list)
             t_seq, t_mask = text_encoder(text_list)
             a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
             a_vec = pool_a(a_enh, a_mask)
@@ -153,7 +153,7 @@ def main():
             for (audio_list, text_list, labels) in val_loader:
                 labels = labels.to(device)
 
-                a_seq, a_mask = audio_encoder(audio_list)
+                a_seq, a_mask = audio_encoder(audio_list, text_list)
                 t_seq, t_mask = text_encoder(text_list)
                 a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                 a_vec = pool_a(a_enh, a_mask)
@@ -179,7 +179,7 @@ def main():
             with torch.no_grad():
                 for audio_list, text_list, labels in val_loader:
                     labels = labels.to(device)
-                    a_seq, a_mask = audio_encoder(audio_list)
+                    a_seq, a_mask = audio_encoder(audio_list, text_list)
                     t_seq, t_mask = text_encoder(text_list)
                     a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                     a_vec = pool_a(a_enh, a_mask)

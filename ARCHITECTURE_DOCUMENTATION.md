@@ -36,15 +36,31 @@ This system performs emotion recognition from speech and text in multiple langua
 
 ### Audio Processing
 ```python
-# Audio Encoder: Wav2Vec2-based
-AudioEncoder(
-    model_name="facebook/wav2vec2-base",
-    hidden_size=768,
-    num_layers=12
+# Front-End Quality Gates Module
+FrontEndQualityGates(
+    sample_rate=16000,
+    vad_method="webrtc",
+    enable_language_detection=True
 )
 
-# Input: Raw audio waveforms
-# Output: Audio embeddings [batch_size, seq_len, 768]
+# Quality Assessment Components:
+# - Voice Activity Detection (VAD)
+# - Signal Quality Assessment (SNR, clipping)
+# - Language Identification with Entropy
+# - Content Type Detection (music, laughter)
+# - Early Abstain Policy
+
+# Audio Encoder: Wav2Vec2-based with Quality Gates
+AudioEncoder(
+    model_name="facebook/wav2vec2-base",
+    adapter_dim=256,
+    freeze_base=True,
+    use_quality_gates=True,
+    vad_method="webrtc"
+)
+
+# Input: Raw audio waveforms + optional text
+# Output: Quality-filtered audio embeddings [batch_size, seq_len, 768]
 ```
 
 ### Text Processing
@@ -64,6 +80,13 @@ TextEncoder(
 - **Speed Perturbation**: ±10% speed variation
 - **Noise Addition**: SNR 10-20dB
 - **Random Application**: 50% chance for each augmentation
+
+### Quality Assessment
+- **Voice Activity Detection**: WebRTC VAD or librosa-based energy VAD
+- **Signal Quality**: SNR estimation, clipping detection, spectral naturalness
+- **Language Identification**: Multi-language detection with entropy calculation
+- **Content Type Detection**: Music vs speech vs laughter classification
+- **Early Abstain Policy**: Quality-based rejection/acceptance decisions
 
 ---
 
@@ -253,7 +276,27 @@ noisy_audio = add_noise_snr(audio, snr)
 
 ## Advanced Features
 
-### 1. Gradient Checkpointing
+### 1. Front-End Quality Gates
+**Purpose**: Multi-stage quality assessment and filtering before feature extraction
+**Components**:
+- **Voice Activity Detection**: WebRTC VAD or librosa-based energy VAD
+- **Signal Quality Assessment**: SNR estimation, clipping detection, spectral naturalness
+- **Language Identification**: Multi-language detection with entropy calculation
+- **Content Type Detection**: Music vs speech vs laughter classification
+- **Early Abstain Policy**: Quality-based rejection/acceptance decisions
+
+**Benefits**:
+- **Efficiency**: Blocks poor-quality audio early, saving computational resources
+- **Quality**: Ensures only high-signal features reach the encoder
+- **Robustness**: Handles various audio quality issues automatically
+- **Fusion**: Quality features integrated into downstream processing
+
+**Decision Logic**:
+- **Reject**: SNR < 5dB OR clipping > 30% OR speech_prob < 0.4
+- **Uncertain**: SNR 5-10dB OR LID_entropy > 1.5 OR music_prob > 0.2
+- **Accept**: SNR > 10dB AND speech_prob > 0.8 AND LID_entropy < 1.0
+
+### 2. Gradient Checkpointing
 **Purpose**: Memory efficiency for deep models
 **Implementation**: Every 5 layers in the 35-layer classifier
 **Memory Savings**: ~50% reduction in memory usage
@@ -356,9 +399,10 @@ confidence = 1 - uncertainty
 
 ### Model Size
 - **Total Parameters**: ~150M parameters
-- **Audio Encoder**: ~95M (Wav2Vec2)
+- **Audio Encoder**: ~95M (Wav2Vec2) + Quality Gates
 - **Text Encoder**: ~110M (mBERT)
 - **Classifier**: ~2M (35-layer deep network)
+- **Quality Gates**: ~50K parameters
 - **Other Components**: ~1M
 
 ### Performance Characteristics
