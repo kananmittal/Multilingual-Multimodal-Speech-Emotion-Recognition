@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from typing import Optional
 
 
 class LabelSmoothingCrossEntropy(nn.Module):
@@ -19,7 +20,7 @@ class LabelSmoothingCrossEntropy(nn.Module):
 
 
 class ClassBalancedFocalLoss(nn.Module):
-    def __init__(self, beta: float = 0.9999, gamma: float = 2.0, num_classes: int | None = None):
+    def __init__(self, beta: float = 0.9999, gamma: float = 2.0, num_classes: Optional[int] = None):
         super().__init__()
         self.beta = beta
         self.gamma = gamma

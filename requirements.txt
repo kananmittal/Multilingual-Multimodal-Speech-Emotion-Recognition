@@ -1,13 +1,34 @@
-torch
-transformers
-torchaudio
-scikit-learn
-numpy
-tqdm
-librosa
+# Core PyTorch and Deep Learning
+torch>=1.12.0
+torchaudio>=0.12.0
+transformers>=4.20.0
+
+# Audio Processing
+librosa>=0.9.0
+scipy>=1.9.0
 webrtcvad
+noisereduce>=2.0.0
+pyannote.audio
+openai-whisper
+
+# Language Processing
+fasttext
 langdetect
-scipy
-noisereduce
-pyloudnorm
-soundfile
+
+# Data Processing and Metrics
+numpy>=1.21.0
+scikit-learn>=1.1.0
+pandas>=1.3.0
+
+# Visualization and Reporting
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Utilities
+tqdm>=4.64.0
+pathlib
+Pillow>=8.3.0
+
+# Optional: Advanced Audio Processing
+# soundfile>=0.10.0
+# resampy>=0.3.0

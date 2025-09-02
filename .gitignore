@@ -80,3 +80,5 @@ temp/
 # Model cache
 .cache/
 transformers_cache/
+evaluation_results/
+outputs/

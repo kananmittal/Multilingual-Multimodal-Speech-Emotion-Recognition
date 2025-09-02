@@ -43,6 +43,14 @@ class AudioEncoder(nn.Module):
                 nn.Dropout(0.1)
             )
 
+        # Combined fusion when both quality and conditioning features are present (8 + 12 = 20)
+        if use_quality_gates and use_audio_conditioning:
+            self.combined_fusion = nn.Sequential(
+                nn.Linear(hid + 20, hid),
+                nn.ReLU(),
+                nn.Dropout(0.1)
+            )
+
     def forward(self, audio_waveforms, texts=None):
         """
         audio_waveforms: List[1D Tensor] of variable lengths
@@ -115,18 +123,18 @@ class AudioEncoder(nn.Module):
                 else:
                     conditioning_features = torch.zeros(seq.size(1), 12, device=seq.device)
                 
-                # Concatenate all features
-                all_features = torch.cat([quality_features, conditioning_features], dim=-1)
-                seq = torch.cat([seq.squeeze(0), all_features], dim=-1)
-                
-                # Apply appropriate fusion
+                # Concatenate all features appropriately and apply correct fusion
+                base_seq = seq.squeeze(0)
                 if self.use_quality_gates and self.use_audio_conditioning:
-                    # Combined fusion for both quality and conditioning features
-                    seq = self.quality_fusion(seq).unsqueeze(0)
+                    all_features = torch.cat([quality_features, conditioning_features], dim=-1)  # [S, 20]
+                    fused_input = torch.cat([base_seq, all_features], dim=-1)  # [S, hid+20]
+                    seq = self.combined_fusion(fused_input).unsqueeze(0)
                 elif self.use_quality_gates:
-                    seq = self.quality_fusion(seq).unsqueeze(0)
+                    fused_input = torch.cat([base_seq, quality_features], dim=-1)  # [S, hid+8]
+                    seq = self.quality_fusion(fused_input).unsqueeze(0)
                 elif self.use_audio_conditioning:
-                    seq = self.conditioning_fusion(seq).unsqueeze(0)
+                    fused_input = torch.cat([base_seq, conditioning_features], dim=-1)  # [S, hid+12]
+                    seq = self.conditioning_fusion(fused_input).unsqueeze(0)
             
             mask = inputs.get("attention_mask", None)
             if mask is not None:

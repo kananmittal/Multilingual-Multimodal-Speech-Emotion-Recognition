@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from typing import Optional
 
 
 class AttentiveStatsPooling(nn.Module):
@@ -11,7 +12,7 @@ class AttentiveStatsPooling(nn.Module):
             nn.Linear(hidden_dim, 1),
         )
 
-    def forward(self, x: torch.Tensor, mask: torch.Tensor | None = None) -> torch.Tensor:
+    def forward(self, x: torch.Tensor, mask: Optional[torch.Tensor] = None) -> torch.Tensor:
         """
         x: [batch, seq_len, input_dim]
         mask: [batch, seq_len] with 1 for valid, 0 for pad (optional)

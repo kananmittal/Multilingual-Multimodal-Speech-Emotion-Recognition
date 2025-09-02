@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from typing import Optional
 
 
 class CrossModalAttention(nn.Module):
@@ -28,7 +29,7 @@ class CrossModalAttention(nn.Module):
         self.norm_a = nn.LayerNorm(audio_dim)
         self.norm_t = nn.LayerNorm(text_dim)
 
-    def forward(self, audio_seq: torch.Tensor, text_seq: torch.Tensor, audio_mask: torch.Tensor | None = None, text_mask: torch.Tensor | None = None):
+    def forward(self, audio_seq: torch.Tensor, text_seq: torch.Tensor, audio_mask: Optional[torch.Tensor] = None, text_mask: Optional[torch.Tensor] = None):
         # Prepare masks for MultiheadAttention: need key padding mask (True for pad)
         t_kpm = (text_mask == 0) if text_mask is not None else None
         a_kpm = (audio_mask == 0) if audio_mask is not None else None
