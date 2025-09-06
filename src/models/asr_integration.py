@@ -59,7 +59,14 @@ class ASRResult:
 class MultilingualASR:
     """Multilingual ASR with confidence estimation and code-switching awareness."""
     
-    def __init__(self, model_name: str = "openai/whisper-large-v3", device: str = "cuda"):
+    def __init__(self, model_name: str = "openai/whisper-large-v3", device: str = None):
+        if device is None:
+            if torch.cuda.is_available():
+                device = "cuda"
+            elif torch.backends.mps.is_available():
+                device = "mps"
+            else:
+                device = "cpu"
         self.device = device
         self.model_name = model_name
         
@@ -289,10 +296,14 @@ class MultilingualASR:
 class TimestampAlignment:
     """Timestamp alignment for ASR output with audio."""
     
-    def __init__(self, device: str = "cuda"):
-        # Ensure device is valid
-        if device == "cuda" and not torch.cuda.is_available():
-            device = "cpu"
+    def __init__(self, device: str = None):
+        if device is None:
+            if torch.cuda.is_available():
+                device = "cuda"
+            elif torch.backends.mps.is_available():
+                device = "mps"
+            else:
+                device = "cpu"
         
         self.device = device
         

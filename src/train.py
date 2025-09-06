@@ -12,7 +12,7 @@ from utils import weighted_f1, energy_score
 import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
-from torch.cuda.amp import autocast, GradScaler
+from torch.amp import autocast, GradScaler
 import argparse
 from data.preprocess import speed_perturb, add_noise_snr
 
@@ -25,8 +25,8 @@ def collate_fn(batch):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--train_manifest', type=str, default='train_manifest.jsonl')
-    parser.add_argument('--val_manifest', type=str, default='val_manifest.jsonl')
+    parser.add_argument('--train_manifest', type=str, default='train_70.jsonl')
+    parser.add_argument('--val_manifest', type=str, default='val_20.jsonl')
     parser.add_argument('--epochs', type=int, default=5)
     parser.add_argument('--batch_size', type=int, default=4)
     parser.add_argument('--lr', type=float, default=1e-4)
@@ -35,8 +35,15 @@ def main():
     parser.add_argument('--augment', action='store_true')
     parser.add_argument('--proto_weight', type=float, default=0.05)
     parser.add_argument('--save_dir', type=str, default='checkpoints')
+    parser.add_argument('--resume_from', type=str, help='Path to checkpoint to resume from')
     args = parser.parse_args()
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    # Device selection with MPS support for Apple Silicon
+    if torch.cuda.is_available():
+        device = 'cuda'
+    elif torch.backends.mps.is_available():
+        device = 'mps'
+    else:
+        device = 'cpu'
 
     train_ds = SERDataset(args.train_manifest)
     val_ds = SERDataset(args.val_manifest)
@@ -80,6 +87,30 @@ def main():
 
     scaler = GradScaler(enabled=args.use_amp)
 
+    # Load checkpoint if resuming
+    start_epoch = 0
+    if args.resume_from and os.path.exists(args.resume_from):
+        print(f"Loading checkpoint from {args.resume_from}")
+        checkpoint = torch.load(args.resume_from, map_location=device)
+        
+        # Load model states
+        audio_encoder.load_state_dict(checkpoint['audio_encoder'])
+        text_encoder.load_state_dict(checkpoint['text_encoder'])
+        cross.load_state_dict(checkpoint['cross'])
+        pool_a.load_state_dict(checkpoint['pool_a'])
+        pool_t.load_state_dict(checkpoint['pool_t'])
+        fusion.load_state_dict(checkpoint['fusion'])
+        classifier.load_state_dict(checkpoint['classifier'])
+        prototypes.load_state_dict(checkpoint['prototypes'])
+        
+        # Load optimizer and scheduler states
+        optimizer.load_state_dict(checkpoint['optimizer'])
+        scheduler.load_state_dict(checkpoint['scheduler'])
+        
+        # Set starting epoch
+        start_epoch = checkpoint['epoch'] + 1
+        print(f"Resuming from epoch {start_epoch}")
+
     total_steps = len(train_loader) * args.epochs
     warmup_steps = int(total_steps * args.warmup_ratio)
     def lr_lambda(step):
@@ -89,7 +120,7 @@ def main():
         return 0.5 * (1.0 + torch.cos(torch.tensor(progress * 3.1415926535))).item()
     scheduler = optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
 
-    for epoch in range(args.epochs):
+    for epoch in range(start_epoch, args.epochs):
         audio_encoder.train(); text_encoder.train(); fusion.train(); classifier.train()
         step = 0
         for (audio_list, text_list, labels) in tqdm(train_loader):

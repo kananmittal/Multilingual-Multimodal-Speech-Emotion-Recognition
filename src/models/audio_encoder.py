@@ -87,9 +87,10 @@ class AudioEncoder(nn.Module):
             else:
                 conditioning_features_list.append(torch.zeros(12, device=audio.device))
             
-            # Process single audio file
+            # Process single audio file - move to CPU for feature extraction
+            processed_audio_cpu = processed_audio.cpu() if processed_audio.device.type == 'mps' else processed_audio
             inputs = self.feature_extractor(
-                [processed_audio],
+                [processed_audio_cpu],
                 sampling_rate=16000,
                 return_tensors="pt",
                 padding=True,

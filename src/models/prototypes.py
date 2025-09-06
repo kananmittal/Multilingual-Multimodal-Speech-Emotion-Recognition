@@ -17,12 +17,26 @@ class PrototypeMemory(nn.Module):
         """
         # Pull to own prototype
         pos = torch.norm(embeddings - self.prototypes[labels], dim=1).mean()
-        # Push from other prototypes using log-sum-exp over negative distances
-        dists = torch.cdist(embeddings, self.prototypes)  # [B, C]
-        arange = torch.arange(dists.size(0), device=dists.device)
+        
+        # Push from other prototypes - avoid cdist for MPS compatibility
+        # Compute distances manually to avoid MPS cdist issues
+        B, D = embeddings.shape
+        C = self.prototypes.shape[0]
+        
+        # Expand embeddings and prototypes for broadcasting
+        embeddings_expanded = embeddings.unsqueeze(1)  # [B, 1, D]
+        prototypes_expanded = self.prototypes.unsqueeze(0)  # [1, C, D]
+        
+        # Compute squared distances
+        squared_dists = torch.sum((embeddings_expanded - prototypes_expanded) ** 2, dim=2)  # [B, C]
+        dists = torch.sqrt(squared_dists + 1e-8)  # [B, C] - add small epsilon for stability
+        
+        # Mask out positive distances
+        arange = torch.arange(B, device=dists.device)
         pos_mask = torch.zeros_like(dists).bool()
         pos_mask[arange, labels] = True
         neg_dists = dists.masked_fill(pos_mask, float('inf'))  # mask own class
+        
         # Use soft-min over negatives via -logsumexp(-d)
         neg = -torch.logsumexp(-neg_dists, dim=1)
         neg = neg.mean()

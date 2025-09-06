@@ -7,6 +7,10 @@ def load_audio(path, sr=16000, max_length=30):
     Load audio file with error handling and length normalization
     max_length: maximum length in seconds
     """
+    # Fix path: prepend 'datasets/' if not already present
+    if not path.startswith('datasets/'):
+        path = f"datasets/{path}"
+    
     try:
         waveform, orig_sr = torchaudio.load(path)
         

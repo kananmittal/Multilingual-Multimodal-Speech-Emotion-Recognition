@@ -25,7 +25,14 @@ class EmotionRecognitionInterface:
     Comprehensive interface for Multilingual Multimodal Speech Emotion Recognition
     """
     
-    def __init__(self, checkpoint_path: str, device: str = "cuda" if torch.cuda.is_available() else "cpu"):
+    def __init__(self, checkpoint_path: str, device: str = None):
+        if device is None:
+            if torch.cuda.is_available():
+                device = "cuda"
+            elif torch.backends.mps.is_available():
+                device = "mps"
+            else:
+                device = "cpu"
         self.device = device
         self.checkpoint_path = checkpoint_path
         
@@ -464,7 +471,12 @@ def main():
     
     # Set device
     if args.device == "auto":
-        device = "cuda" if torch.cuda.is_available() else "cpu"
+        if torch.cuda.is_available():
+            device = "cuda"
+        elif torch.backends.mps.is_available():
+            device = "mps"
+        else:
+            device = "cpu"
     else:
         device = args.device
     

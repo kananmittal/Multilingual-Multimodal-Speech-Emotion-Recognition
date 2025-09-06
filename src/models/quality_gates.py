@@ -540,6 +540,7 @@ class FrontEndQualityGates(nn.Module):
         metrics.quality_score = quality_score
         
         # 8. Create quality features for downstream fusion
+        device = next(self.quality_projection.parameters()).device
         quality_features = torch.tensor([
             speech_prob,
             snr_db / 50.0,  # Normalize to [0, 1]
@@ -549,9 +550,7 @@ class FrontEndQualityGates(nn.Module):
             dominant_language_conf,
             music_prob,
             laughter_prob
-        ], dtype=torch.float32)
-        
-        # Project quality features
+        ], dtype=torch.float32, device=device)
         quality_features = self.quality_projection(quality_features.unsqueeze(0)).squeeze(0)
         metrics.quality_features = quality_features
         
@@ -559,7 +558,7 @@ class FrontEndQualityGates(nn.Module):
         should_process = abstain_decision == 'accept'
         
         # 10. Return processed audio (apply quality-based filtering if needed)
-        processed_audio = torch.tensor(audio, dtype=torch.float32)
+        processed_audio = torch.tensor(audio, dtype=torch.float32, device=device)
         
         # If rejected, return zero audio (or could return None)
         if abstain_decision == 'reject':

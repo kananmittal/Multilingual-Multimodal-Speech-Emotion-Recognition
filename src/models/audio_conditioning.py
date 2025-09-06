@@ -558,6 +558,7 @@ class AudioConditioningModule(nn.Module):
         )
         
         # 7. Create conditioning features for downstream fusion
+        device = next(self.conditioning_projection.parameters()).device
         conditioning_features = torch.tensor([
             float(hum_filtered),
             float(hpf_applied),
@@ -571,14 +572,14 @@ class AudioConditioningModule(nn.Module):
             lufs_adjustment / 20.0,  # Normalize to [0, 1]
             peak_reduction_db / 20.0,  # Normalize to [0, 1]
             compression_ratio / 4.0  # Normalize to [0, 1]
-        ], dtype=torch.float32)
+        ], dtype=torch.float32, device=device)
         
         # Project conditioning features
         conditioning_features = self.conditioning_projection(conditioning_features.unsqueeze(0)).squeeze(0)
         features.conditioning_features = conditioning_features
         
         # 8. Return conditioned audio
-        conditioned_audio = torch.tensor(normalized_audio, dtype=torch.float32)
+        conditioned_audio = torch.tensor(normalized_audio, dtype=torch.float32, device=device)
         
         return conditioned_audio, features
     
