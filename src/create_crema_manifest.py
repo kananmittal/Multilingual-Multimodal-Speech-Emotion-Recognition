@@ -14,14 +14,16 @@ def extract_emotion_from_filename(filename):
     parts = filename.split('_')
     if len(parts) >= 3:
         emotion = parts[2].upper()
-        # Map CREMA emotions to our 4-class system
+        # Map CREMA emotions to 6-class system (Anger, Disgust, Fear, Happy, Neutral, Sad)
+        # Keep existing indices for the original four, and add distinct labels for DIS and FEA.
+        # 0: Angry, 1: Happy, 2: Sad, 3: Neutral, 4: Disgust, 5: Fear
         emotion_map = {
             'ANG': 0,  # Angry
             'HAP': 1,  # Happy  
             'SAD': 2,  # Sad
             'NEU': 3,  # Neutral
-            'DIS': 0,  # Disgust -> Angry
-            'FEA': 0,  # Fear -> Angry
+            'DIS': 4,  # Disgust
+            'FEA': 5,  # Fear
         }
         return emotion_map.get(emotion, 3)  # Default to neutral
     return 3  # Default to neutral

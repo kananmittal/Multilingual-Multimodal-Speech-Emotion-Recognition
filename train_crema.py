@@ -34,7 +34,7 @@ from data.dataset import SERDataset
 from data.preprocess import speed_perturb  # keep noise out for now
 from utils import weighted_f1
 
-NUM_LABELS = 4  # Angry, Happy, Sad, Neutral
+NUM_LABELS = 6  # Angry, Happy, Sad, Neutral, Disgust, Fear
 
 
 def collate_fn(batch):
