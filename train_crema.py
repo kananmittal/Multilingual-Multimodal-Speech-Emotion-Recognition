@@ -118,6 +118,9 @@ def main():
     parser.add_argument('--patience', type=int, default=5, help='Early stopping patience')
     parser.add_argument('--save_every', type=int, default=2, help='Save checkpoint every N epochs')
     parser.add_argument('--seed', type=int, default=42)
+    # Optional ASR integration in text encoder
+    parser.add_argument('--use_asr', action='store_true', default=False, help='Enable ASR integration in text encoder')
+    parser.add_argument('--asr_model_name', type=str, default='openai/whisper-base', help='ASR model name for integration')
     args = parser.parse_args()
 
     set_seed(args.seed)
@@ -179,7 +182,7 @@ def main():
     # Initialize models
     print("🔧 Initializing models...")
     audio_encoder = AudioEncoder().to(device)
-    text_encoder = TextEncoder().to(device)
+    text_encoder = TextEncoder(use_asr_integration=args.use_asr, asr_model_name=args.asr_model_name).to(device)
     audio_hid = audio_encoder.encoder.config.hidden_size
     text_hid = text_encoder.encoder.config.hidden_size
     cross = CrossModalAttention(audio_hid, text_hid, shared_dim=256, num_heads=8, dropout=0.15).to(device)
