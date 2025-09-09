@@ -121,6 +121,8 @@ def main():
     # Optional ASR integration in text encoder
     parser.add_argument('--use_asr', action='store_true', default=False, help='Enable ASR integration in text encoder')
     parser.add_argument('--asr_model_name', type=str, default='openai/whisper-base', help='ASR model name for integration')
+    # Toggle OpenMax (uncertainty-aware) vs plain Softmax logits in classifier
+    parser.add_argument('--openmax', action='store_true', default=False, help='Enable OpenMax calibration in classifier forward')
     args = parser.parse_args()
 
     set_seed(args.seed)
@@ -317,8 +319,8 @@ def main():
                 t_vec = pool_t(t_enh, t_mask)
                 fused_raw = fusion(a_vec, t_vec)
 
-                # Classifier on raw fused (keep distribution)
-                logits = classifier(fused_raw, use_openmax=True)
+                # Classifier on raw fused
+                logits = classifier(fused_raw, use_openmax=args.openmax)
 
                 # Losses
                 ce_loss = ce_smooth(logits, labels)
@@ -351,7 +353,7 @@ def main():
                     a_enh_aug, _ = cross(a_seq_aug, t_seq, a_mask_aug, t_mask)
                     a_vec_aug = pool_a(a_enh_aug, a_mask_aug)
                     fused_aug_raw = fusion(a_vec_aug, t_vec)
-                    logits_aug = classifier(fused_aug_raw, use_openmax=True)
+                    logits_aug = classifier(fused_aug_raw, use_openmax=args.openmax)
                     aug_loss = ce_smooth(logits_aug, labels)
                     total_loss = total_loss + 0.2 * aug_loss
 
@@ -410,7 +412,7 @@ def main():
                     t_vec = pool_t(t_enh, t_mask)
                     fused_raw = fusion(a_vec, t_vec)
 
-                    logits = classifier(fused_raw, use_openmax=True)
+                    logits = classifier(fused_raw, use_openmax=args.openmax)
                     ce_loss = ce_smooth(logits, labels)
                     focal_loss = cb_focal(logits, labels)
 
