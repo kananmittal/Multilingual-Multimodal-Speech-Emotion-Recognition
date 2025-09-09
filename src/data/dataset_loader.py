@@ -8,42 +8,46 @@ import re
 class SERDatasetLoader:
     """Loader for multiple SER datasets with unified label mapping"""
     
-    # Unified emotion labels (mapping to 0-3 for our model)
+    # Unified emotion labels (mapping to 0-5 for 6-class CREMA model)
+    # CREMA emotions: 0=Neutral, 1=Happy, 2=Sad, 3=Angry, 4=Fear, 5=Disgust
     EMOTION_MAP = {
-        # RAVDESS emotions
+        # RAVDESS emotions (mapped to 6-class system)
         '01': 0,  # neutral
-        '02': 1,  # calm (map to happy)
-        '03': 2,  # happy
-        '04': 3,  # sad
-        '05': 4,  # angry
-        '06': 5,  # fearful
-        '07': 6,  # disgust
-        '08': 7,  # surprised
+        '02': 1,  # calm -> happy
+        '03': 1,  # happy
+        '04': 2,  # sad
+        '05': 3,  # angry
+        '06': 4,  # fearful
+        '07': 5,  # disgust
+        '08': 1,  # surprised -> happy
         
-        # CREMA-D emotions (from filename)
+        # CREMA-D emotions (from filename) - 6 classes
         'NEU': 0,  # neutral
-        'HAP': 2,  # happy
-        'SAD': 3,  # sad
-        'ANG': 4,  # angry
-        'FEA': 5,  # fearful
-        'DIS': 6,  # disgust
+        'HAP': 1,  # happy
+        'SAD': 2,  # sad
+        'ANG': 3,  # angry
+        'FEA': 4,  # fearful
+        'DIS': 5,  # disgust
         
-        # Unified mapping to 4 classes
+        # Unified mapping to 6 classes
         'neutral': 0,
         'happy': 1,
         'sad': 2,
         'angry': 3,
+        'fear': 4,
+        'disgust': 5,
     }
     
-    # Map 8-class emotions to 4-class
-    EMOTION_TO_4CLASS = {
+    # Map emotions to 6-class system (for CREMA compatibility)
+    # 0=Neutral, 1=Happy, 2=Sad, 3=Angry, 4=Fear, 5=Disgust
+    EMOTION_TO_6CLASS = {
         0: 0,  # neutral -> neutral
         1: 1,  # calm -> happy
         2: 1,  # happy -> happy
         3: 2,  # sad -> sad
         4: 3,  # angry -> angry
-        5: 2,  # fearful -> sad
-        6: 3,  # disgust -> angry
+        5: 4,  # fearful -> fearful
+        6: 5,  # disgust -> disgust
         7: 1,  # surprised -> happy
     }
     
@@ -81,8 +85,8 @@ class SERDatasetLoader:
                     # Only use speech modality
                     if modality == '03' and vocal_channel == '01':
                         emotion_label = self.EMOTION_MAP.get(emotion_code, 0)
-                        # Map to 4-class
-                        emotion_label = self.EMOTION_TO_4CLASS.get(emotion_label, 0)
+                        # Map to 6-class
+                        emotion_label = self.EMOTION_TO_6CLASS.get(emotion_label, 0)
                         
                         # Create dummy transcript (in real scenario, you'd use ASR)
                         transcript = f"Statement {statement} by actor {actor_num}"
@@ -127,8 +131,8 @@ class SERDatasetLoader:
                 
                 # Map emotion to label
                 emotion_label = self.EMOTION_MAP.get(emotion, 0)
-                # Map to 4-class
-                emotion_label = self.EMOTION_TO_4CLASS.get(emotion_label, 0)
+                # Map to 6-class
+                emotion_label = self.EMOTION_TO_6CLASS.get(emotion_label, 0)
                 
                 # Create dummy transcript
                 transcript = f"Speaker {speaker_id} utterance"
@@ -242,7 +246,7 @@ class SERDatasetLoader:
         
         print(f"{split_name} label distribution:")
         for label, count in sorted(label_counts.items()):
-            emotion_name = {0: 'neutral', 1: 'happy', 2: 'sad', 3: 'angry'}.get(label, f'unknown_{label}')
+            emotion_name = {0: 'neutral', 1: 'happy', 2: 'sad', 3: 'angry', 4: 'fear', 5: 'disgust'}.get(label, f'unknown_{label}')
             print(f"  {emotion_name}: {count}")
 
 

@@ -15,7 +15,7 @@ from torch.cuda.amp import autocast, GradScaler
 import argparse
 from data.preprocess import speed_perturb, add_noise_snr
 
-NUM_LABELS = 4  # Angry, Happy, Sad, Neutral (example)
+NUM_LABELS = 6  # Anger, Disgust, Fear, Happy, Neutral, Sad (CREMA dataset)
 
 def collate_fn(batch):
     audios, texts, labels = zip(*batch)

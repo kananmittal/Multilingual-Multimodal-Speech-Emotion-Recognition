@@ -90,8 +90,8 @@ def main():
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
     fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
-    classifier = Classifier(512, num_labels=4).to(device)
-    prototypes = PrototypeMemory(4, 512).to(device)
+    classifier = Classifier(512, num_labels=6).to(device)
+    prototypes = PrototypeMemory(6, 512).to(device)
 
     # Load checkpoint
     print(f"Loading checkpoint: {args.checkpoint}")
