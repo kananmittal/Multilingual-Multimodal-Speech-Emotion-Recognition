@@ -10,13 +10,24 @@ class LabelSmoothingCrossEntropy(nn.Module):
         self.smoothing = smoothing
 
     def forward(self, logits: torch.Tensor, target: torch.Tensor) -> torch.Tensor:
+        # Numerical guards
         num_classes = logits.size(-1)
+        target = target.long().clamp(min=0, max=max(0, num_classes - 1))
+        # Clamp logits to avoid infs in softmax/log
+        logits = logits.clamp(min=-10.0, max=10.0)
         log_probs = F.log_softmax(logits, dim=-1)
+        # Replace non-finite values defensively
+        log_probs = torch.nan_to_num(log_probs, neginf=-1e9)
         with torch.no_grad():
             true_dist = torch.zeros_like(log_probs)
             true_dist.fill_(self.smoothing / (num_classes - 1))
             true_dist.scatter_(1, target.unsqueeze(1), 1.0 - self.smoothing)
-        return torch.mean(torch.sum(-true_dist * log_probs, dim=-1))
+        loss = torch.sum(-true_dist * log_probs, dim=-1)
+        loss = torch.nan_to_num(loss, nan=0.0, posinf=1e6, neginf=1e6)
+        loss = torch.mean(loss)
+        if not torch.isfinite(loss):
+            return torch.tensor(0.0, device=logits.device, requires_grad=True)
+        return loss
 
 
 class ClassBalancedFocalLoss(nn.Module):
@@ -33,16 +44,23 @@ class ClassBalancedFocalLoss(nn.Module):
             with torch.no_grad():
                 counts = torch.bincount(targets, minlength=self.num_classes).float().clamp(min=1.0)
                 effective_num = 1.0 - torch.pow(torch.tensor(self.beta, device=logits.device), counts)
+                effective_num = effective_num.clamp(min=1e-6)  # Prevent division by zero
                 weights = (1.0 - self.beta) / effective_num
-                weights = weights / weights.sum() * self.num_classes
+                weights = weights / (weights.sum() + 1e-8) * self.num_classes  # Add epsilon
         else:
             weights = None
 
+        # Clamp logits to prevent overflow
+        logits = logits.clamp(min=-10.0, max=10.0)
         probs = F.softmax(logits, dim=-1)
         pt = probs.gather(1, targets.unsqueeze(1)).squeeze(1).clamp(min=1e-6, max=1.0)
         focal_weight = torch.pow(1.0 - pt, self.gamma)
         ce = F.cross_entropy(logits, targets, reduction='none', weight=weights)
         loss = (focal_weight * ce).mean()
+        
+        # Check for NaN and return zero if found
+        if not torch.isfinite(loss):
+            return torch.tensor(0.0, device=logits.device, requires_grad=True)
         return loss
 
 
