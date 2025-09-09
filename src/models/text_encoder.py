@@ -6,7 +6,7 @@ from .asr_integration import EnhancedASRIntegration, create_enhanced_asr
 
 class TextEncoder(nn.Module):
     def __init__(self, model_name="xlm-roberta-base", adapter_dim: int = 256, freeze_base: bool = True,
-                 use_asr_integration: bool = True, asr_model_name: str = "openai/whisper-large-v3"):
+                 use_asr_integration: bool = False, asr_model_name: str = "openai/whisper-base"):
         super().__init__()
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.encoder = AutoModel.from_pretrained(model_name)
@@ -21,14 +21,14 @@ class TextEncoder(nn.Module):
         
         # Initialize ASR integration
         self.use_asr_integration = use_asr_integration
-        if use_asr_integration:
-            self.asr_integration = create_enhanced_asr(asr_model_name)
-            # ASR feature fusion layer
-            self.asr_fusion = nn.Sequential(
-                nn.Linear(hid + 8, hid),  # 8 ASR features
-                nn.ReLU(),
-                nn.Dropout(0.1)
-            )
+        self.asr_integration = None
+        # ASR feature fusion layer (initialized regardless to keep shapes stable)
+        self.asr_fusion = nn.Sequential(
+            nn.Linear(hid + 8, hid),  # 8 ASR features
+            nn.ReLU(),
+            nn.Dropout(0.1)
+        )
+        self._asr_model_name = asr_model_name
 
     def forward(self, text_list, audio_waveforms=None):
         """
@@ -36,8 +36,11 @@ class TextEncoder(nn.Module):
         audio_waveforms: Optional audio for ASR transcription
         """
         # Handle ASR integration when no text is provided
-        if (text_list is None or all(text == "" for text in text_list)) and audio_waveforms is not None:
+        if self.use_asr_integration and (text_list is None or all(text == "" for text in text_list)) and audio_waveforms is not None:
             # Use ASR to generate transcripts
+            if self.asr_integration is None:
+                # Lazy initialization to avoid heavy model load when not needed
+                self.asr_integration = create_enhanced_asr(self._asr_model_name)
             asr_results = []
             for audio in audio_waveforms:
                 asr_result = self.asr_integration(audio)
@@ -56,6 +59,8 @@ class TextEncoder(nn.Module):
         # Fuse ASR features if available
         if self.use_asr_integration and audio_waveforms is not None:
             asr_features_list = []
+            if self.asr_integration is None:
+                self.asr_integration = create_enhanced_asr(self._asr_model_name)
             for audio in audio_waveforms:
                 asr_result = self.asr_integration(audio)
                 asr_features_list.append(asr_result.asr_features)

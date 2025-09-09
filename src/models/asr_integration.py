@@ -59,7 +59,7 @@ class ASRResult:
 class MultilingualASR:
     """Multilingual ASR with confidence estimation and code-switching awareness."""
     
-    def __init__(self, model_name: str = "openai/whisper-large-v3", device: str = None):
+    def __init__(self, model_name: str = "openai/whisper-base", device: str = None):
         if device is None:
             if torch.cuda.is_available():
                 device = "cuda"
@@ -298,10 +298,10 @@ class TimestampAlignment:
     
     def __init__(self, device: str = None):
         if device is None:
-            if torch.cuda.is_available():
-                device = "cuda"
-            elif torch.backends.mps.is_available():
+            if torch.backends.mps.is_available():
                 device = "mps"
+            elif torch.cuda.is_available():
+                device = "cuda"
             else:
                 device = "cpu"
         
@@ -310,8 +310,8 @@ class TimestampAlignment:
         # Initialize wav2vec2 for alignment
         if WAV2VEC2_AVAILABLE:
             try:
-                self.alignment_model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base").to(device)
-                self.alignment_processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base")
+                self.alignment_model = Wav2Vec2ForCTC.from_pretrained("facebook/wav2vec2-base-960h").to(device)
+                self.alignment_processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
             except Exception as e:
                 logging.warning(f"Failed to initialize wav2vec2 alignment: {e}")
                 self.alignment_model = None
