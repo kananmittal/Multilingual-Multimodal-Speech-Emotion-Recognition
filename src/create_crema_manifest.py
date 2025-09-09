@@ -48,7 +48,7 @@ def create_crema_manifest():
         relative_path = str(audio_file.relative_to(Path("datasets")))
         emotion_groups[emotion].append({
             'audio': relative_path,
-            'text': f"Audio sample from crema dataset with emotion {emotion}",
+            'text': "Audio sample from CREMA dataset",
             'label': emotion,
             'dataset': 'crema'
         })

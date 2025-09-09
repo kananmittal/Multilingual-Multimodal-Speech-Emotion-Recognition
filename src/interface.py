@@ -44,8 +44,8 @@ class EmotionRecognitionInterface:
         self.tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-cased")
         
         # Emotion labels
-        self.emotion_labels = ["Neutral", "Happy", "Sad", "Angry"]
-        self.emotion_colors = ["gray", "yellow", "blue", "red"]
+        self.emotion_labels = ["Angry", "Happy", "Sad", "Neutral", "Disgust", "Fear"]
+        self.emotion_colors = ["red", "yellow", "blue", "gray", "purple", "orange"]
         
         print(f"✅ Emotion Recognition Interface loaded successfully on {device}")
         print(f"📁 Checkpoint: {checkpoint_path}")
@@ -86,14 +86,14 @@ class EmotionRecognitionInterface:
         # Advanced classifier
         self.classifier = AdvancedOpenMaxClassifier(
             input_dim=512,
-            num_labels=4,
+            num_labels=6,
             num_layers=35,
             base_dim=512,
             dropout=0.15
         ).to(self.device)
         
         # Prototype memory
-        self.prototypes = PrototypeMemory(4, 512).to(self.device)
+        self.prototypes = PrototypeMemory(6, 512).to(self.device)
     
     def _load_checkpoint(self):
         """Load trained model weights"""

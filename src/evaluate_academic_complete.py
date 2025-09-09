@@ -48,12 +48,12 @@ def load_and_freeze_model(checkpoint_path, device):
     fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
     classifier = AdvancedOpenMaxClassifier(
         input_dim=512, 
-        num_labels=4, 
+        num_labels=6, 
         num_layers=35, 
         base_dim=512, 
         dropout=0.15
     ).to(device)
-    prototypes = PrototypeMemory(4, 512).to(device)
+    prototypes = PrototypeMemory(6, 512).to(device)
     
     # Load checkpoint
     checkpoint = torch.load(checkpoint_path, map_location=device)
@@ -63,7 +63,7 @@ def load_and_freeze_model(checkpoint_path, device):
     text_encoder.load_state_dict(checkpoint['text_encoder'])
     cross.load_state_dict(checkpoint['cross'])
     pool_a.load_state_dict(checkpoint['pool_a'])
-    pool_t.load_state_dict(checkpoint['pool_a'])
+    pool_t.load_state_dict(checkpoint['pool_t'])
     fusion.load_state_dict(checkpoint['fusion'])
     classifier.load_state_dict(checkpoint['classifier'])
     prototypes.load_state_dict(checkpoint['prototypes'])
@@ -349,7 +349,7 @@ def run_robustness_analysis(model, test_loader, device, baseline_f1):
 
 def run_per_class_analysis(predictions, labels):
     """Run per-class analysis."""
-    emotion_names = ['angry', 'happy', 'sad', 'neutral']
+    emotion_names = ['angry', 'happy', 'sad', 'neutral', 'disgust', 'fear']
     
     per_class_results = {}
     for i, emotion in enumerate(emotion_names):

@@ -75,10 +75,10 @@ class TwoPhaseTrainer:
         
         # Classifier and prototypes
         self.classifier = AdvancedOpenMaxClassifier(
-            input_dim=512, num_labels=4, num_layers=35, 
+            input_dim=512, num_labels=6, num_layers=35, 
             base_dim=512, dropout=0.15
         ).to(self.device)
-        self.prototypes = PrototypeMemory(4, 512).to(self.device)
+        self.prototypes = PrototypeMemory(6, 512).to(self.device)
         
         # Advanced components
         self.cross_lingual_handler = CrossLingualVarianceHandler(
@@ -91,11 +91,11 @@ class TwoPhaseTrainer:
         ).to(self.device)
         
         self.temporal_module = TemporalModelingModule(
-            hidden_dim=256, speaker_dim=128, num_emotions=4
+            hidden_dim=256, speaker_dim=128, num_emotions=6
         ).to(self.device)
         
         self.ood_detector = DualGateOODDetector(
-            num_classes=4, feature_dim=512, num_languages=5,
+            num_classes=6, feature_dim=512, num_languages=5,
             early_abstain=True, late_detection=True
         ).to(self.device)
         
@@ -148,7 +148,7 @@ class TwoPhaseTrainer:
     def _initialize_loss_integration(self):
         """Initialize comprehensive loss integration."""
         self.loss_integration = ComprehensiveLossIntegration(
-            num_classes=4,
+            num_classes=6,
             feature_dim=512,
             prototype_memory=self.prototypes,
             temperature=0.07,

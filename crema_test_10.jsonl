@@ -1,749 +1,749 @@
-{"audio": "crema/1064_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1083_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1076_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1075_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1091_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1027_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1035_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1064_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1020_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1075_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1024_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1051_IEO_DIS_HI.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1009_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1023_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1030_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1021_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1080_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1049_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1001_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1029_TSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1050_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1034_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1035_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1075_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1077_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1085_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1058_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1012_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1043_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1012_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1059_IWL_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1029_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1074_ITH_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1077_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1019_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1091_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1008_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1057_TIE_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1015_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1054_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1083_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1063_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1014_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1028_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1034_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1006_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1070_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1067_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1004_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1010_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1003_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1039_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1020_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1054_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1060_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1006_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1061_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1006_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1088_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1068_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1081_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1059_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1036_ITS_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1041_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1007_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1032_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1036_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1038_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1023_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1017_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1083_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1043_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1057_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1006_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1073_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1056_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1044_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1020_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1013_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1007_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1011_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1007_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1043_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1038_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1001_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1007_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1013_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1072_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1066_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1059_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1031_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1067_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1021_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1003_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1016_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1058_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1021_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1087_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1048_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1027_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1089_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1075_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1076_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1083_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1008_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1063_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1023_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1042_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1063_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1013_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1075_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1045_ITH_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1006_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1051_IEO_FEA_HI.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1019_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1068_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1089_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1055_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1090_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1009_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1008_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1070_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1035_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1062_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1028_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1056_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1059_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1048_TAI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1069_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1084_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1069_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1030_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1061_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1054_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1013_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1058_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1085_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1015_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1030_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1004_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1046_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1054_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1083_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1071_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1025_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1053_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1052_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1031_ITH_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1074_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1007_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1007_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1061_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1077_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1041_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1051_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1007_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1066_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1086_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1082_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1041_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1056_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1035_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1010_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1083_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1064_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1068_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1084_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1048_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1015_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1090_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1048_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1083_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1088_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1011_IEO_FEA_LO.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1041_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1067_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1038_ITS_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1032_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1038_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1060_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1050_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1081_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1024_IEO_FEA_LO.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1091_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1064_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1017_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1006_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1051_ITS_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1059_ITS_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1017_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1054_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1063_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1086_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1091_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1042_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1044_ITH_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1004_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1022_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1066_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1025_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1043_TIE_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1061_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1037_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1021_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1010_TAI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1069_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1080_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1006_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1022_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1032_DFA_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1067_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1056_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1084_IEO_FEA_HI.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1027_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1016_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1050_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1045_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1086_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1050_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1087_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1037_IWL_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1013_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1017_ITH_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1064_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1034_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1034_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1068_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1051_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1045_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1035_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1040_IWL_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1047_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1026_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1066_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1002_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1085_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1059_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1051_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1001_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1066_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1010_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1052_IEO_DIS_HI.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1018_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1023_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1036_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1063_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1072_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1003_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1085_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1033_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1076_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1019_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1090_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1052_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1060_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1051_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1027_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1079_ITS_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1086_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1043_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1072_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1070_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1048_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1048_TIE_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1078_ITS_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1035_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1011_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1064_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1012_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1073_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1076_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1007_TIE_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1074_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1040_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1077_TIE_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1020_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1026_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1087_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1031_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1049_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1034_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1067_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1065_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1012_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1019_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1028_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1063_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1040_IEO_DIS_HI.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1031_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1078_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1051_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1074_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1008_IWL_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1085_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1046_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1016_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1091_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1026_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1054_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1014_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1086_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1066_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1039_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1071_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1065_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1057_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1043_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1033_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1015_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1081_DFA_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1005_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1075_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1068_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1066_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1014_IEO_FEA_LO.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1082_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1040_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1041_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1012_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1025_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1084_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1056_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1040_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1086_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1054_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1059_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1008_TAI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1062_TIE_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1077_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1086_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1071_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1012_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1039_ITS_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1035_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1074_TIE_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1023_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1081_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1054_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1044_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1027_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1065_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1084_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1046_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1015_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1062_ITS_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1009_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1035_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1042_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1087_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1008_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1090_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1035_TAI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1078_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1036_ITS_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1081_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1090_ITS_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1082_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1014_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1001_DFA_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1029_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1090_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1058_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1002_DFA_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1002_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1028_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1009_ITS_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1068_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1053_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1032_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1037_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1053_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1006_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1081_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1008_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1055_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1053_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1036_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1083_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1042_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1035_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1072_IWL_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1013_ITS_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1044_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1067_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1053_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1085_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1085_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1027_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1064_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1014_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1022_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1004_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1060_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1075_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1018_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1014_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1045_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1042_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1043_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1035_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1044_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1045_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1011_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1034_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1091_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1008_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1060_TAI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1034_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1021_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1027_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1013_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1035_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1055_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1038_ITS_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1043_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1078_ITS_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1008_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1021_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1029_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1066_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1087_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1033_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1021_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1054_ITS_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1080_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1083_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1085_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1053_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1035_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1023_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1067_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1002_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1076_IEO_FEA_HI.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1059_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1043_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1029_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1051_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1070_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1070_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1073_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1076_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1040_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1002_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1056_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1032_TIE_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1034_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1054_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1024_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1037_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1008_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1024_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1077_ITH_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1045_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1052_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1051_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1065_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1081_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1042_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1079_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1070_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1071_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1034_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1014_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1023_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1051_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1042_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1083_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1088_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1015_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1087_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1053_TAI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1052_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1074_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1078_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1078_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1008_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1019_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1027_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1046_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1089_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1069_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1041_IWL_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1081_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1069_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1012_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1085_MTI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1068_ITS_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1010_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1032_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1030_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1077_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1069_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1022_MTI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1070_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1007_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1042_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1048_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1033_ITH_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1071_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1061_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1081_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1007_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1008_TIE_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1067_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1047_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1025_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1002_IEO_FEA_HI.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1078_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1041_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1056_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1078_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1039_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1053_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1025_DFA_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1044_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1058_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1042_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1023_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1084_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1027_ITH_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1034_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1024_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1016_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1074_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1059_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1067_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1089_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1045_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1012_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1005_IEO_FEA_LO.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1074_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1029_ITH_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1087_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1051_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1017_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1057_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1066_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1057_IWW_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1076_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1049_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1003_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1076_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1031_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1067_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1086_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1062_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1084_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1045_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1060_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1023_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1044_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1069_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1023_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1047_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1085_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1035_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1056_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1069_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1085_TSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1081_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1007_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1033_WSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1089_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1047_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1044_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1080_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1059_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1057_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1052_TIE_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1012_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1035_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1062_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1083_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1025_IEO_DIS_HI.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1026_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1069_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1047_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1025_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1065_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1005_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1036_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1003_DFA_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1020_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1011_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1073_ITH_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1067_TIE_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1085_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1081_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1053_WSI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1049_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1023_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1056_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1044_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1051_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1049_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1010_ITH_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1042_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1088_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1058_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1089_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1018_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1015_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1005_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1065_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1036_IWW_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1079_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1015_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1078_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1075_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1072_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1027_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1053_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1037_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1069_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1066_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1018_ITS_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1064_DFA_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1062_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1071_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1053_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1062_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1061_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1006_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1056_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1006_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1071_WSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1090_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1046_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1049_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1083_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1012_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1082_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1072_IWW_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1087_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1079_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1052_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1071_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1003_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1037_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1008_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1046_ITH_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1071_WSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1065_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1041_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1021_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1022_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1062_WSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1045_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1054_TSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1017_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1073_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1069_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1054_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1070_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1009_TSI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1042_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1084_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1081_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1074_ITS_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1090_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1066_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1088_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1022_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1055_IEO_ANG_LO.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1016_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1070_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1061_IEO_HAP_MD.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1047_IWL_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1072_DFA_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1039_ITS_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1015_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1024_IEO_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1062_TAI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1069_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1062_MTI_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1081_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1079_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1062_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1056_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1040_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1055_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1057_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1074_MTI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1013_IEO_HAP_HI.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1062_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1056_IWL_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1062_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1061_MTI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1072_WSI_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1028_TAI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1028_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1073_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1028_ITS_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1039_IEO_SAD_HI.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1056_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1015_TIE_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1003_IOM_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1079_TSI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1080_IOM_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1040_IEO_FEA_LO.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1067_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1080_IEO_FEA_MD.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1027_ITH_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1040_IEO_DIS_MD.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1027_IWL_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1062_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1063_IEO_DIS_HI.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1074_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1040_TIE_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1058_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1083_ITS_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1074_TIE_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1065_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1087_TAI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1021_IWL_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1041_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1044_DFA_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1064_IWL_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1042_IEO_SAD_MD.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1041_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1069_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1080_IEO_ANG_MD.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1072_DFA_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1080_IOM_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1031_DFA_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1049_IWW_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1034_ITS_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1004_IOM_NEU_XX.wav", "text": "Audio sample from crema dataset with emotion 3", "label": 3, "dataset": "crema"}
-{"audio": "crema/1007_TIE_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1060_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1047_TSI_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1048_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1049_TAI_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1036_MTI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1035_ITH_SAD_XX.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1072_IEO_SAD_LO.wav", "text": "Audio sample from crema dataset with emotion 2", "label": 2, "dataset": "crema"}
-{"audio": "crema/1089_IWW_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1073_TSI_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1044_TIE_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1032_TAI_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1010_IEO_ANG_HI.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1041_IOM_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1029_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1011_ITH_FEA_XX.wav", "text": "Audio sample from crema dataset with emotion 5", "label": 5, "dataset": "crema"}
-{"audio": "crema/1003_ITH_HAP_XX.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
-{"audio": "crema/1058_IEO_DIS_LO.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1091_IWW_ANG_XX.wav", "text": "Audio sample from crema dataset with emotion 0", "label": 0, "dataset": "crema"}
-{"audio": "crema/1037_IOM_DIS_XX.wav", "text": "Audio sample from crema dataset with emotion 4", "label": 4, "dataset": "crema"}
-{"audio": "crema/1037_IEO_HAP_LO.wav", "text": "Audio sample from crema dataset with emotion 1", "label": 1, "dataset": "crema"}
+{"audio": "crema/1064_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1083_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1076_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1075_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1091_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1027_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1035_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1064_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1020_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1075_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1024_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1051_IEO_DIS_HI.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1009_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1023_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1030_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1021_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1080_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1049_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1001_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1029_TSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1050_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1034_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1035_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1075_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1077_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1085_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1058_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1012_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1043_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1012_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1059_IWL_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1029_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1074_ITH_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1077_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1019_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1091_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1008_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1057_TIE_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1015_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1054_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1083_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1063_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1014_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1028_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1034_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1006_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1070_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1067_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1004_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1010_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1003_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1039_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1020_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1054_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1060_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1006_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1061_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1006_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1088_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1068_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1081_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1059_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1036_ITS_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1041_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1007_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1032_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1036_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1038_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1023_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1017_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1083_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1043_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1057_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1006_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1073_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1056_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1044_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1020_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1013_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1007_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1011_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1007_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1043_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1038_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1001_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1007_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1013_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1072_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1066_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1059_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1031_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1067_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1021_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1003_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1016_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1058_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1021_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1087_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1048_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1027_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1089_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1075_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1076_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1083_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1008_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1063_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1023_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1042_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1063_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1013_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1075_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1045_ITH_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1006_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1051_IEO_FEA_HI.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1019_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1068_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1089_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1055_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1090_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1009_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1008_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1070_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1035_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1062_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1028_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1056_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1059_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1048_TAI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1069_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1084_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1069_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1030_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1061_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1054_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1013_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1058_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1085_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1015_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1030_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1004_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1046_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1054_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1083_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1071_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1025_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1053_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1052_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1031_ITH_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1074_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1007_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1007_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1061_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1077_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1041_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1051_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1007_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1066_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1086_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1082_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1041_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1056_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1035_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1010_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1083_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1064_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1068_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1084_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1048_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1015_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1090_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1048_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1083_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1088_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1011_IEO_FEA_LO.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1041_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1067_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1038_ITS_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1032_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1038_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1060_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1050_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1081_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1024_IEO_FEA_LO.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1091_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1064_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1017_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1006_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1051_ITS_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1059_ITS_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1017_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1054_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1063_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1086_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1091_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1042_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1044_ITH_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1004_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1022_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1066_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1025_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1043_TIE_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1061_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1037_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1021_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1010_TAI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1069_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1080_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1006_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1022_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1032_DFA_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1067_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1056_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1084_IEO_FEA_HI.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1027_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1016_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1050_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1045_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1086_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1050_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1087_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1037_IWL_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1013_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1017_ITH_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1064_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1034_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1034_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1068_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1051_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1045_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1035_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1040_IWL_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1047_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1026_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1066_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1002_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1085_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1059_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1051_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1001_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1066_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1010_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1052_IEO_DIS_HI.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1018_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1023_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1036_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1063_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1072_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1003_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1085_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1033_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1076_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1019_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1090_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1052_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1060_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1051_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1027_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1079_ITS_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1086_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1043_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1072_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1070_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1048_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1048_TIE_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1078_ITS_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1035_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1011_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1064_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1012_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1073_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1076_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1007_TIE_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1074_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1040_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1077_TIE_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1020_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1026_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1087_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1031_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1049_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1034_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1067_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1065_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1012_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1019_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1028_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1063_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1040_IEO_DIS_HI.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1031_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1078_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1051_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1074_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1008_IWL_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1085_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1046_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1016_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1091_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1026_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1054_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1014_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1086_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1066_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1039_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1071_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1065_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1057_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1043_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1033_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1015_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1081_DFA_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1005_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1075_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1068_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1066_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1014_IEO_FEA_LO.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1082_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1040_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1041_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1012_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1025_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1084_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1056_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1040_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1086_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1054_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1059_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1008_TAI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1062_TIE_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1077_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1086_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1071_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1012_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1039_ITS_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1035_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1074_TIE_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1023_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1081_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1054_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1044_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1027_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1065_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1084_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1046_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1015_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1062_ITS_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1009_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1035_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1042_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1087_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1008_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1090_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1035_TAI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1078_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1036_ITS_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1081_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1090_ITS_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1082_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1014_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1001_DFA_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1029_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1090_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1058_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1002_DFA_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1002_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1028_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1009_ITS_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1068_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1053_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1032_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1037_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1053_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1006_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1081_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1008_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1055_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1053_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1036_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1083_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1042_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1035_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1072_IWL_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1013_ITS_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1044_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1067_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1053_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1085_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1085_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1027_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1064_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1014_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1022_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1004_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1060_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1075_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1018_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1014_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1045_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1042_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1043_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1035_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1044_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1045_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1011_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1034_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1091_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1008_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1060_TAI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1034_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1021_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1027_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1013_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1035_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1055_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1038_ITS_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1043_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1078_ITS_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1008_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1021_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1029_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1066_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1087_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1033_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1021_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1054_ITS_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1080_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1083_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1085_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1053_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1035_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1023_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1067_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1002_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1076_IEO_FEA_HI.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1059_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1043_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1029_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1051_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1070_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1070_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1073_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1076_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1040_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1002_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1056_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1032_TIE_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1034_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1054_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1024_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1037_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1008_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1024_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1077_ITH_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1045_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1052_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1051_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1065_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1081_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1042_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1079_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1070_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1071_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1034_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1014_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1023_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1051_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1042_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1083_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1088_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1015_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1087_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1053_TAI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1052_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1074_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1078_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1078_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1008_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1019_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1027_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1046_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1089_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1069_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1041_IWL_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1081_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1069_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1012_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1085_MTI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1068_ITS_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1010_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1032_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1030_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1077_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1069_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1022_MTI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1070_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1007_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1042_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1048_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1033_ITH_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1071_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1061_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1081_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1007_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1008_TIE_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1067_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1047_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1025_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1002_IEO_FEA_HI.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1078_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1041_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1056_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1078_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1039_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1053_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1025_DFA_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1044_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1058_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1042_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1023_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1084_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1027_ITH_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1034_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1024_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1016_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1074_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1059_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1067_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1089_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1045_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1012_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1005_IEO_FEA_LO.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1074_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1029_ITH_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1087_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1051_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1017_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1057_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1066_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1057_IWW_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1076_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1049_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1003_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1076_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1031_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1067_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1086_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1062_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1084_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1045_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1060_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1023_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1044_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1069_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1023_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1047_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1085_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1035_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1056_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1069_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1085_TSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1081_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1007_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1033_WSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1089_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1047_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1044_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1080_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1059_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1057_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1052_TIE_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1012_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1035_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1062_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1083_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1025_IEO_DIS_HI.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1026_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1069_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1047_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1025_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1065_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1005_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1036_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1003_DFA_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1020_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1011_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1073_ITH_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1067_TIE_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1085_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1081_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1053_WSI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1049_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1023_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1056_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1044_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1051_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1049_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1010_ITH_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1042_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1088_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1058_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1089_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1018_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1015_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1005_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1065_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1036_IWW_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1079_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1015_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1078_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1075_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1072_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1027_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1053_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1037_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1069_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1066_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1018_ITS_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1064_DFA_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1062_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1071_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1053_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1062_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1061_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1006_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1056_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1006_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1071_WSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1090_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1046_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1049_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1083_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1012_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1082_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1072_IWW_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1087_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1079_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1052_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1071_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1003_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1037_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1008_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1046_ITH_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1071_WSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1065_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1041_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1021_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1022_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1062_WSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1045_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1054_TSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1017_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1073_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1069_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1054_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1070_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1009_TSI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1042_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1084_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1081_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1074_ITS_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1090_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1066_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1088_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1022_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1055_IEO_ANG_LO.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1016_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1070_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1061_IEO_HAP_MD.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1047_IWL_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1072_DFA_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1039_ITS_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1015_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1024_IEO_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1062_TAI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1069_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1062_MTI_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1081_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1079_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1062_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1056_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1040_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1055_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1057_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1074_MTI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1013_IEO_HAP_HI.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1062_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1056_IWL_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1062_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1061_MTI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1072_WSI_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1028_TAI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1028_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1073_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1028_ITS_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1039_IEO_SAD_HI.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1056_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1015_TIE_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1003_IOM_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1079_TSI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1080_IOM_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1040_IEO_FEA_LO.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1067_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1080_IEO_FEA_MD.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1027_ITH_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1040_IEO_DIS_MD.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1027_IWL_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1062_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1063_IEO_DIS_HI.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1074_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1040_TIE_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1058_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1083_ITS_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1074_TIE_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1065_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1087_TAI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1021_IWL_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1041_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1044_DFA_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1064_IWL_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1042_IEO_SAD_MD.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1041_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1069_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1080_IEO_ANG_MD.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1072_DFA_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1080_IOM_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1031_DFA_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1049_IWW_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1034_ITS_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1004_IOM_NEU_XX.wav", "text": "Audio sample from CREMA dataset", "label": 3, "dataset": "crema"}
+{"audio": "crema/1007_TIE_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1060_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1047_TSI_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1048_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1049_TAI_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1036_MTI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1035_ITH_SAD_XX.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1072_IEO_SAD_LO.wav", "text": "Audio sample from CREMA dataset", "label": 2, "dataset": "crema"}
+{"audio": "crema/1089_IWW_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1073_TSI_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1044_TIE_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1032_TAI_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1010_IEO_ANG_HI.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1041_IOM_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1029_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1011_ITH_FEA_XX.wav", "text": "Audio sample from CREMA dataset", "label": 5, "dataset": "crema"}
+{"audio": "crema/1003_ITH_HAP_XX.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}
+{"audio": "crema/1058_IEO_DIS_LO.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1091_IWW_ANG_XX.wav", "text": "Audio sample from CREMA dataset", "label": 0, "dataset": "crema"}
+{"audio": "crema/1037_IOM_DIS_XX.wav", "text": "Audio sample from CREMA dataset", "label": 4, "dataset": "crema"}
+{"audio": "crema/1037_IEO_HAP_LO.wav", "text": "Audio sample from CREMA dataset", "label": 1, "dataset": "crema"}

@@ -419,7 +419,7 @@ def main():
                     fused_norm = nn.functional.normalize(fused_raw, p=2, dim=-1)
                     proto_loss = prototypes.prototype_loss(fused_norm, labels)
 
-                    total = ce_loss + 0.2 * focal_loss + args.proto_weight * proto_loss
+                    total = ce_loss + 0.1 * focal_loss + args.proto_weight * proto_loss
 
                 preds = torch.argmax(logits, dim=1)
                 f1 = weighted_f1(preds, labels)

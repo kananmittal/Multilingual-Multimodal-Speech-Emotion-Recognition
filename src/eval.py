@@ -99,12 +99,12 @@ def main():
     fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
     classifier = AdvancedOpenMaxClassifier(
         input_dim=512, 
-        num_labels=4, 
+        num_labels=6, 
         num_layers=35, 
         base_dim=512, 
         dropout=0.15
     ).to(device)
-    prototypes = PrototypeMemory(4, 512).to(device)
+    prototypes = PrototypeMemory(6, 512).to(device)
 
     # Load checkpoint
     print(f"Loading checkpoint: {args.checkpoint}")
@@ -220,7 +220,7 @@ def main():
     f1_weighted = weighted_f1(torch.tensor(all_preds), torch.tensor(all_labels))
     
     # Classification report
-    emotion_names = ['neutral', 'happy', 'sad', 'angry']
+    emotion_names = ['angry', 'happy', 'sad', 'neutral', 'disgust', 'fear']
     print("\n" + "="*50)
     print("EVALUATION RESULTS")
     print("="*50)
