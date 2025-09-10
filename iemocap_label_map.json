@@ -1,0 +1,26 @@
+{
+  "ang": 0,
+  "dis": 1,
+  "exc": 2,
+  "fea": 3,
+  "fru": 4,
+  "hap": 5,
+  "neu": 6,
+  "oth": 7,
+  "sad": 8,
+  "sur": 9,
+  "xxx": 10,
+  "names": {
+    "ang": "Anger",
+    "dis": "Disgust",
+    "exc": "Excited",
+    "fea": "Fear",
+    "fru": "Frustration",
+    "hap": "Happiness",
+    "neu": "Neutral",
+    "oth": "Other",
+    "sad": "Sadness",
+    "sur": "Surprise",
+    "xxx": "No consensus / Unknown"
+  }
+}
