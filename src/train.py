@@ -4,8 +4,6 @@ from torch.utils.data import DataLoader
 from models import AudioEncoder, TextEncoder, FusionLayer, Classifier
 from models.cross_attention import CrossModalAttention
 from models.pooling import AttentiveStatsPooling
-from models.losses import LabelSmoothingCrossEntropy, ClassBalancedFocalLoss, SupConLoss
-from models.prototypes import PrototypeMemory
 from data.dataset import SERDataset
 from utils import weighted_f1, energy_score
 import torch.nn as nn
@@ -14,8 +12,9 @@ from tqdm import tqdm
 from torch.cuda.amp import autocast, GradScaler
 import argparse
 from data.preprocess import speed_perturb, add_noise_snr
+from collections import Counter
 
-NUM_LABELS = 6  # Anger, Disgust, Fear, Happy, Neutral, Sad (CREMA dataset)
+NUM_LABELS = 6  # default; will be overridden if label map exists elsewhere
 
 def collate_fn(batch):
     audios, texts, labels = zip(*batch)
@@ -32,48 +31,88 @@ def main():
     parser.add_argument('--warmup_ratio', type=float, default=0.1)
     parser.add_argument('--use_amp', action='store_true')
     parser.add_argument('--augment', action='store_true')
-    parser.add_argument('--proto_weight', type=float, default=0.05)
+    parser.add_argument('--proto_weight', type=float, default=0.0)
+    parser.add_argument('--num_workers', type=int, default=4)
+    parser.add_argument('--device', type=str, default='auto', choices=['auto','cpu','mps','cuda'])
+    parser.add_argument('--fusion_mode', type=str, default='gate', choices=['gate','concat'])
     parser.add_argument('--save_dir', type=str, default='checkpoints')
     args = parser.parse_args()
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    if args.device != 'auto':
+        device = args.device
+    else:
+        device = 'cuda' if torch.cuda.is_available() else ('mps' if torch.backends.mps.is_available() else 'cpu')
 
     train_ds = SERDataset(args.train_manifest)
     val_ds = SERDataset(args.val_manifest)
 
-    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn)
-    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn, num_workers=args.num_workers, pin_memory=(device=='cuda'))
+    val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn, num_workers=args.num_workers, pin_memory=(device=='cuda'))
 
-    audio_encoder = AudioEncoder().to(device)
-    text_encoder = TextEncoder().to(device)
+    # Start with frozen encoders (freeze_base=True)
+    audio_encoder = AudioEncoder(freeze_base=True).to(device)
+    text_encoder = TextEncoder(freeze_base=True).to(device)
     audio_hid = audio_encoder.encoder.config.hidden_size
     text_hid = text_encoder.encoder.config.hidden_size
     cross = CrossModalAttention(audio_hid, text_hid, shared_dim=256, num_heads=8).to(device)
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
-    fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
-    classifier = Classifier(512, NUM_LABELS).to(device)
-    prototypes = PrototypeMemory(NUM_LABELS, 512).to(device)
+    fusion = FusionLayer(audio_hid * 2, text_hid * 2, 1024).to(device)
+    if args.fusion_mode == 'concat':
+        classifier_in = audio_hid * 2 + text_hid * 2
+    else:
+        classifier_in = 1024
+    classifier = Classifier(classifier_in, NUM_LABELS).to(device)
 
-    params = list(audio_encoder.parameters()) + list(text_encoder.parameters()) + \
-             list(cross.parameters()) + list(pool_a.parameters()) + list(pool_t.parameters()) + \
-             list(fusion.parameters()) + list(classifier.parameters()) + list(prototypes.parameters())
-    optimizer = optim.AdamW(params, lr=args.lr, weight_decay=0.05)
-    ce_smooth = LabelSmoothingCrossEntropy(0.1)
-    cb_focal = ClassBalancedFocalLoss(beta=0.9999, gamma=2.0, num_classes=NUM_LABELS)
-    supcon = SupConLoss(temperature=0.07)
+    # Build param groups: encoders (low lr), heads (higher lr)
+    encoder_params = list(audio_encoder.parameters()) + list(text_encoder.parameters())
+    head_params = list(cross.parameters()) + list(pool_a.parameters()) + list(pool_t.parameters()) + \
+                  list(fusion.parameters()) + list(classifier.parameters())
+    optimizer = optim.AdamW([
+        {'params': encoder_params, 'lr': args.lr * 0.1, 'weight_decay': 0.01},
+        {'params': head_params, 'lr': args.lr, 'weight_decay': 0.01},
+    ])
+    
+    # Compute class weights from training labels to handle imbalance
+    label_counts = Counter([it['label'] for it in train_ds.items])
+    max_count = max(label_counts.values()) if label_counts else 1
+    class_weights = torch.tensor([max_count / max(1, label_counts.get(c, 1)) for c in range(NUM_LABELS)], dtype=torch.float32, device=device)
+    criterion = nn.CrossEntropyLoss(weight=class_weights)
 
-    scaler = GradScaler(enabled=args.use_amp)
+    scaler = GradScaler(enabled=args.use_amp and device=='cuda')
 
-    total_steps = len(train_loader) * args.epochs
-    warmup_steps = int(total_steps * args.warmup_ratio)
-    def lr_lambda(step):
-        if step < warmup_steps:
-            return float(step) / max(1, warmup_steps)
-        progress = (step - warmup_steps) / max(1, total_steps - warmup_steps)
-        return 0.5 * (1.0 + torch.cos(torch.tensor(progress * 3.1415926535))).item()
-    scheduler = optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
+    steps_per_epoch = len(train_loader)
+    scheduler = optim.lr_scheduler.OneCycleLR(
+        optimizer,
+        max_lr=[args.lr * 0.1, args.lr],
+        steps_per_epoch=max(1, steps_per_epoch),
+        epochs=args.epochs,
+        pct_start=args.warmup_ratio,
+        anneal_strategy='cos',
+        div_factor=1.0,
+        final_div_factor=10.0,
+    )
+
+    def unfreeze_last_layers():
+        # Unfreeze last 4 transformer blocks in each encoder if available
+        try:
+            # Wav2Vec2
+            wav_layers = getattr(audio_encoder.encoder, 'encoder').layers
+            for p in wav_layers[-4:].parameters():
+                p.requires_grad = True
+        except Exception:
+            pass
+        try:
+            # XLM-RoBERTa
+            roberta_layers = getattr(text_encoder.encoder, 'encoder').layer
+            for p in roberta_layers[-4:].parameters():
+                p.requires_grad = True
+        except Exception:
+            pass
 
     for epoch in range(args.epochs):
+        # After first epoch, unfreeze last layers to finetune
+        if epoch == 1:
+            unfreeze_last_layers()
         audio_encoder.train(); text_encoder.train(); fusion.train(); classifier.train()
         step = 0
         for (audio_list, text_list, labels) in tqdm(train_loader):
@@ -100,19 +139,15 @@ def main():
             a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
             a_vec = pool_a(a_enh, a_mask)
             t_vec = pool_t(t_enh, t_mask)
-            fused = fusion(a_vec, t_vec)
-            with autocast(enabled=args.use_amp):
+            if args.fusion_mode == 'concat':
+                fused = torch.cat([a_vec, t_vec], dim=-1)
+            else:
+                fused = fusion(a_vec, t_vec)
+            with autocast(enabled=(args.use_amp and device=='cuda')):
                 logits = classifier(fused)
-                # Start with simpler loss combination
-                ce_loss = ce_smooth(logits, labels)
-                focal_loss = cb_focal(logits, labels)
-                loss = ce_loss + 0.3 * focal_loss  # Reduced focal weight
-                # Add prototype loss with smaller weight
-                if args.proto_weight > 0:
-                    proto_loss = prototypes.prototype_loss(fused, labels)
-                    loss = loss + 0.01 * proto_loss  # Very small prototype weight
+                loss = criterion(logits, labels)
             optimizer.zero_grad(set_to_none=True)
-            if args.use_amp:
+            if args.use_amp and device=='cuda':
                 scaler.scale(loss).backward()
                 scaler.step(optimizer)
                 scaler.update()
@@ -134,9 +169,11 @@ def main():
                 a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
-                fused = fusion(a_vec, t_vec)
-                with torch.no_grad():
-                    logits = classifier(fused)
+                if args.fusion_mode == 'concat':
+                    fused = torch.cat([a_vec, t_vec], dim=-1)
+                else:
+                    fused = fusion(a_vec, t_vec)
+                logits = classifier(fused)
 
                 preds = torch.argmax(logits, dim=1)
                 all_preds.extend(preds.cpu())
@@ -155,13 +192,12 @@ def main():
             'pool_t': pool_t.state_dict(),
             'fusion': fusion.state_dict(),
             'classifier': classifier.state_dict(),
-            'prototypes': prototypes.state_dict(),
             'optimizer': optimizer.state_dict(),
             'scheduler': scheduler.state_dict(),
             'epoch': epoch,
             'f1': f1,
         }
-        torch.save(ckpt, os.path.join(args.save_dir, f'epoch_{epoch}_f1_{f1:.4f}.pt'))
+        torch.save(ckpt, os.path.join(args.save_dir, f'epoch_{epoch}_f1_{float(f1):.4f}.pt'))
 
 if __name__ == "__main__":
     main()
