@@ -76,6 +76,8 @@ def main():
     parser.add_argument('--val_manifest', type=str, help='Validation manifest for temperature calibration')
     parser.add_argument('--device', type=str, default='auto', choices=['auto','cpu','mps','cuda'])
     parser.add_argument('--fusion_mode', type=str, default='gate', choices=['gate','concat'])
+    parser.add_argument('--save_preds', type=str, default='', help='Path to save per-sample predictions as JSONL')
+    parser.add_argument('--save_probs', type=str, default='', help='Path to save probability matrix as .npy')
     args = parser.parse_args()
 
     if args.device != 'auto':
@@ -167,6 +169,7 @@ def main():
     loader = DataLoader(ds, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn)
 
     all_preds, all_labels, all_energies, all_probs = [], [], [], []
+    saved_samples = []
     
     with torch.no_grad():
         for audio_list, text_list, labels in tqdm(loader, desc="Evaluating"):
@@ -206,10 +209,22 @@ def main():
             preds = torch.argmax(logits, dim=1)
             energies = energy_score(logits)
             
-            all_preds.extend(preds.cpu().numpy())
-            all_labels.extend(labels.cpu().numpy())
-            all_energies.extend(energies.cpu().numpy())
-            all_probs.extend(probs.cpu().numpy())
+            preds_np = preds.cpu().numpy()
+            labels_np = labels.cpu().numpy()
+            probs_np = probs.cpu().numpy()
+            energies_np = energies.cpu().numpy()
+            all_preds.extend(preds_np)
+            all_labels.extend(labels_np)
+            all_energies.extend(energies_np)
+            all_probs.extend(probs_np)
+            if args.save_preds:
+                # Save lightweight per-sample info
+                for i in range(len(preds_np)):
+                    saved_samples.append({
+                        'pred': int(preds_np[i]),
+                        'label': int(labels_np[i]),
+                        'energy': float(energies_np[i])
+                    })
 
     # Convert to numpy arrays
     all_preds = np.array(all_preds)
@@ -265,6 +280,17 @@ def main():
     print(f"  Std confidence: {max_probs.std():.3f}")
     print(f"  High confidence (>0.8): {(max_probs > 0.8).mean():.3f}")
     print(f"  Low confidence (<0.5): {(max_probs < 0.5).mean():.3f}")
+
+    # Optional saves
+    if args.save_probs:
+        np.save(args.save_probs, all_probs)
+        print(f"Saved probabilities to {args.save_probs}")
+    if args.save_preds:
+        import json
+        with open(args.save_preds, 'w') as f:
+            for row in saved_samples:
+                f.write(json.dumps(row) + "\n")
+        print(f"Saved predictions to {args.save_preds}")
 
 
 if __name__ == "__main__":
