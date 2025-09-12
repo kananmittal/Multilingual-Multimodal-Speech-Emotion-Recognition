@@ -14,7 +14,7 @@ import argparse
 from data.preprocess import speed_perturb, add_noise_snr
 from collections import Counter
 
-NUM_LABELS = 6  # default; will be overridden if label map exists elsewhere
+NUM_LABELS = 6  # default; will be overridden dynamically below
 
 def collate_fn(batch):
     audios, texts, labels = zip(*batch)
@@ -44,6 +44,8 @@ def main():
 
     train_ds = SERDataset(args.train_manifest)
     val_ds = SERDataset(args.val_manifest)
+    # Dynamically determine number of labels from dataset
+    num_labels = max([it['label'] for it in train_ds.items] + [0]) + 1
 
     train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, collate_fn=collate_fn, num_workers=args.num_workers, pin_memory=(device=='cuda'))
     val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False, collate_fn=collate_fn, num_workers=args.num_workers, pin_memory=(device=='cuda'))
@@ -61,7 +63,7 @@ def main():
         classifier_in = audio_hid * 2 + text_hid * 2
     else:
         classifier_in = 1024
-    classifier = Classifier(classifier_in, NUM_LABELS).to(device)
+    classifier = Classifier(classifier_in, num_labels).to(device)
 
     # Build param groups: encoders (low lr), heads (higher lr)
     encoder_params = list(audio_encoder.parameters()) + list(text_encoder.parameters())
@@ -75,7 +77,7 @@ def main():
     # Compute class weights from training labels to handle imbalance
     label_counts = Counter([it['label'] for it in train_ds.items])
     max_count = max(label_counts.values()) if label_counts else 1
-    class_weights = torch.tensor([max_count / max(1, label_counts.get(c, 1)) for c in range(NUM_LABELS)], dtype=torch.float32, device=device)
+    class_weights = torch.tensor([max_count / max(1, label_counts.get(c, 1)) for c in range(num_labels)], dtype=torch.float32, device=device)
     criterion = nn.CrossEntropyLoss(weight=class_weights)
 
     scaler = GradScaler(enabled=args.use_amp and device=='cuda')
