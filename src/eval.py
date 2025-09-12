@@ -5,7 +5,6 @@ from torch.utils.data import DataLoader
 from models import AudioEncoder, TextEncoder, FusionLayer, Classifier
 from models.cross_attention import CrossModalAttention
 from models.pooling import AttentiveStatsPooling
-from models.prototypes import PrototypeMemory
 from data.dataset import SERDataset
 from utils import weighted_f1, energy_score
 from data.preprocess import speed_perturb, add_noise_snr
@@ -75,31 +74,47 @@ def main():
     parser.add_argument('--num_tta', type=int, default=5, help='Number of TTA augmentations')
     parser.add_argument('--calibrate', action='store_true', help='Use temperature scaling')
     parser.add_argument('--val_manifest', type=str, help='Validation manifest for temperature calibration')
+    parser.add_argument('--device', type=str, default='auto', choices=['auto','cpu','mps','cuda'])
+    parser.add_argument('--fusion_mode', type=str, default='gate', choices=['gate','concat'])
     args = parser.parse_args()
 
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    if args.device != 'auto':
+        device = args.device
+    else:
+        device = 'cuda' if torch.cuda.is_available() else ('mps' if torch.backends.mps.is_available() else 'cpu')
     print(f"Using device: {device}")
 
     # Load model
     print("Loading model...")
-    audio_encoder = AudioEncoder().to(device)
-    text_encoder = TextEncoder().to(device)
+    audio_encoder = AudioEncoder(freeze_base=True).to(device)
+    text_encoder = TextEncoder(freeze_base=True).to(device)
     audio_hid = audio_encoder.encoder.config.hidden_size
     text_hid = text_encoder.encoder.config.hidden_size
     cross = CrossModalAttention(audio_hid, text_hid, shared_dim=256, num_heads=8).to(device)
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
-    fusion = FusionLayer(audio_hid * 2, text_hid * 2, 512).to(device)
-    classifier = Classifier(512, num_labels=6).to(device)
-    prototypes = PrototypeMemory(6, 512).to(device)
-
-    # Load checkpoint
+    fusion = FusionLayer(audio_hid * 2, text_hid * 2, 1024).to(device)
+    # Infer num_labels from checkpoint
     print(f"Loading checkpoint: {args.checkpoint}")
     try:
-        ckpt = torch.load(args.checkpoint, map_location=device)
-    except:
-        # Try with weights_only=False for older checkpoints
         ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
+    except TypeError:
+        ckpt = torch.load(args.checkpoint, map_location=device)
+    # Try to infer classifier in/out dims
+    cls_sd = ckpt.get('classifier', {})
+    # Find last linear weight
+    num_labels = None
+    for k, v in cls_sd.items():
+        if k.endswith('weight') and v.dim() == 2:
+            num_labels = v.size(0)
+    if num_labels is None:
+        num_labels = 6
+    if args.fusion_mode == 'concat':
+        classifier_in = audio_hid * 2 + text_hid * 2
+    else:
+        classifier_in = 1024
+    classifier = Classifier(classifier_in, num_labels=num_labels).to(device)
+
     audio_encoder.load_state_dict(ckpt['audio_encoder'])
     text_encoder.load_state_dict(ckpt['text_encoder'])
     cross.load_state_dict(ckpt['cross'])
@@ -107,7 +122,6 @@ def main():
     pool_t.load_state_dict(ckpt['pool_t'])
     fusion.load_state_dict(ckpt['fusion'])
     classifier.load_state_dict(ckpt['classifier'])
-    prototypes.load_state_dict(ckpt['prototypes'])
 
     # Set to eval mode
     audio_encoder.eval()
@@ -136,7 +150,7 @@ def main():
                 a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
-                fused = fusion(a_vec, t_vec)
+                fused = torch.cat([a_vec, t_vec], dim=-1) if args.fusion_mode == 'concat' else fusion(a_vec, t_vec)
                 logits = classifier(fused)
                 
                 val_logits.append(logits)
@@ -181,7 +195,7 @@ def main():
                 a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
-                fused = fusion(a_vec, t_vec)
+                fused = torch.cat([a_vec, t_vec], dim=-1) if args.fusion_mode == 'concat' else fusion(a_vec, t_vec)
                 logits = classifier(fused)
             
             # Apply temperature scaling
@@ -206,8 +220,18 @@ def main():
     # Calculate metrics
     f1_weighted = weighted_f1(torch.tensor(all_preds), torch.tensor(all_labels))
     
-    # Classification report
-    emotion_names = ['neutral', 'happy', 'sad', 'angry']
+    # Classification report (names optional if not 4 classes)
+    emotion_names = None
+    if len(set(all_labels)) in (4, 6, 8, 11):
+        # Optionally map common sizes to placeholder names
+        if len(set(all_labels)) == 4:
+            emotion_names = ['neutral', 'happy', 'sad', 'angry']
+        elif len(set(all_labels)) == 6:
+            emotion_names = [f'class_{i}' for i in range(6)]
+        elif len(set(all_labels)) == 8:
+            emotion_names = [f'class_{i}' for i in range(8)]
+        elif len(set(all_labels)) == 11:
+            emotion_names = [f'class_{i}' for i in range(11)]
     print("\n" + "="*50)
     print("EVALUATION RESULTS")
     print("="*50)
@@ -216,7 +240,10 @@ def main():
     print(f"Temperature: {optimal_temp:.3f}")
     
     print("\nClassification Report:")
-    print(classification_report(all_labels, all_preds, target_names=emotion_names))
+    if emotion_names is not None:
+        print(classification_report(all_labels, all_preds, target_names=emotion_names))
+    else:
+        print(classification_report(all_labels, all_preds))
     
     print("\nConfusion Matrix:")
     cm = confusion_matrix(all_labels, all_preds)
@@ -224,11 +251,12 @@ def main():
     
     # Per-class accuracy
     print("\nPer-class Accuracy:")
-    for i, emotion in enumerate(emotion_names):
+    for i in range(num_labels):
         class_mask = all_labels == i
         if class_mask.sum() > 0:
             class_acc = (all_preds[class_mask] == all_labels[class_mask]).mean()
-            print(f"  {emotion}: {class_acc:.3f} ({class_mask.sum()} samples)")
+            name = emotion_names[i] if emotion_names and i < len(emotion_names) else f'class_{i}'
+            print(f"  {name}: {class_acc:.3f} ({class_mask.sum()} samples)")
     
     # Confidence analysis
     max_probs = all_probs.max(axis=1)
