@@ -5,6 +5,7 @@ from torch.utils.data import DataLoader
 from models import AudioEncoder, TextEncoder, FusionLayer, Classifier
 from models.cross_attention import CrossModalAttention
 from models.pooling import AttentiveStatsPooling
+from models.advanced_fusion import AdvancedFusionLayer, MultiScaleFusionLayer
 from data.dataset import SERDataset
 from utils import weighted_f1, energy_score
 from data.preprocess import speed_perturb, add_noise_snr
@@ -75,7 +76,8 @@ def main():
     parser.add_argument('--calibrate', action='store_true', help='Use temperature scaling')
     parser.add_argument('--val_manifest', type=str, help='Validation manifest for temperature calibration')
     parser.add_argument('--device', type=str, default='auto', choices=['auto','cpu','mps','cuda'])
-    parser.add_argument('--fusion_mode', type=str, default='gate', choices=['gate','concat'])
+    parser.add_argument('--fusion_mode', type=str, default='advanced', choices=['gate','concat','advanced','multiscale'])
+    parser.add_argument('--fusion_dim', type=int, default=2048, help='Fusion layer dimension')
     parser.add_argument('--save_preds', type=str, default='', help='Path to save per-sample predictions as JSONL')
     parser.add_argument('--save_probs', type=str, default='', help='Path to save probability matrix as .npy')
     args = parser.parse_args()
@@ -95,13 +97,25 @@ def main():
     cross = CrossModalAttention(audio_hid, text_hid, shared_dim=256, num_heads=8).to(device)
     pool_a = AttentiveStatsPooling(audio_hid).to(device)
     pool_t = AttentiveStatsPooling(text_hid).to(device)
-    fusion = FusionLayer(audio_hid * 2, text_hid * 2, 1024).to(device)
-    # Infer num_labels from checkpoint
+    # Load checkpoint first to infer fusion dims/num_labels
     print(f"Loading checkpoint: {args.checkpoint}")
     try:
         ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
     except TypeError:
         ckpt = torch.load(args.checkpoint, map_location=device)
+    # Determine fusion projection dim from checkpoint (backward compatible)
+    proj_dim = 1024
+    f_sd = ckpt.get('fusion', {})
+    w = f_sd.get('proj_a.0.weight', None)
+    if isinstance(w, torch.Tensor) and w.dim() == 2:
+        proj_dim = w.size(0)
+    # Advanced fusion layer
+    if args.fusion_mode == 'advanced':
+        fusion = AdvancedFusionLayer(audio_hid * 2, text_hid * 2, proj_dim).to(device)
+    elif args.fusion_mode == 'multiscale':
+        fusion = MultiScaleFusionLayer([audio_hid, audio_hid//2], [text_hid, text_hid//2], proj_dim).to(device)
+    else:
+        fusion = FusionLayer(audio_hid * 2, text_hid * 2, proj_dim).to(device)
     # Try to infer classifier in/out dims
     cls_sd = ckpt.get('classifier', {})
     # Find last linear weight
@@ -111,10 +125,14 @@ def main():
             num_labels = v.size(0)
     if num_labels is None:
         num_labels = 6
-    if args.fusion_mode == 'concat':
-        classifier_in = audio_hid * 2 + text_hid * 2
-    else:
-        classifier_in = 1024
+    # Determine classifier input dim from checkpoint to ensure compatibility
+    classifier_in = None
+    w0 = cls_sd.get('net.0.weight', None)
+    if isinstance(w0, torch.Tensor) and w0.dim() == 2:
+        classifier_in = w0.size(1)
+    if classifier_in is None:
+        # Fallback based on fusion mode and proj
+        classifier_in = (audio_hid * 2 + text_hid * 2) if args.fusion_mode == 'concat' else proj_dim
     classifier = Classifier(classifier_in, num_labels=num_labels).to(device)
 
     audio_encoder.load_state_dict(ckpt['audio_encoder'])
@@ -152,7 +170,12 @@ def main():
                 a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
-                fused = torch.cat([a_vec, t_vec], dim=-1) if args.fusion_mode == 'concat' else fusion(a_vec, t_vec)
+                if args.fusion_mode == 'concat':
+                    fused = torch.cat([a_vec, t_vec], dim=-1)
+                elif args.fusion_mode in ['advanced', 'multiscale']:
+                    fused = fusion(a_vec, t_vec, a_mask, t_mask)
+                else:
+                    fused = fusion(a_vec, t_vec)
                 logits = classifier(fused)
                 
                 val_logits.append(logits)
@@ -186,7 +209,10 @@ def main():
                     a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                     a_vec = pool_a(a_enh, a_mask)
                     t_vec = pool_t(t_enh, t_mask)
-                    fused = fusion(a_vec, t_vec)
+                    if args.fusion_mode in ['advanced', 'multiscale']:
+                        fused = fusion(a_vec, t_vec, a_mask, t_mask)
+                    else:
+                        fused = fusion(a_vec, t_vec)
                     logits = classifier(fused)
                     all_logits.append(logits)
                 
@@ -198,7 +224,12 @@ def main():
                 a_enh, t_enh = cross(a_seq, t_seq, a_mask, t_mask)
                 a_vec = pool_a(a_enh, a_mask)
                 t_vec = pool_t(t_enh, t_mask)
-                fused = torch.cat([a_vec, t_vec], dim=-1) if args.fusion_mode == 'concat' else fusion(a_vec, t_vec)
+                if args.fusion_mode == 'concat':
+                    fused = torch.cat([a_vec, t_vec], dim=-1)
+                elif args.fusion_mode in ['advanced', 'multiscale']:
+                    fused = fusion(a_vec, t_vec, a_mask, t_mask)
+                else:
+                    fused = fusion(a_vec, t_vec)
                 logits = classifier(fused)
             
             # Apply temperature scaling

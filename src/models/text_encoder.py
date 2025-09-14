@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModel
 from .pooling import AttentiveStatsPooling
 
 class TextEncoder(nn.Module):
-    def __init__(self, model_name="xlm-roberta-base", adapter_dim: int = 256, freeze_base: bool = True):
+    def __init__(self, model_name="xlm-roberta-large", adapter_dim: int = 512, freeze_base: bool = True):
         super().__init__()
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.encoder = AutoModel.from_pretrained(model_name)
