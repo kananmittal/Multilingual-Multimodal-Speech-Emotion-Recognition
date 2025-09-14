@@ -4,7 +4,7 @@ from transformers import Wav2Vec2Model, Wav2Vec2FeatureExtractor
 from .pooling import AttentiveStatsPooling
 
 class AudioEncoder(nn.Module):
-    def __init__(self, model_name="facebook/wav2vec2-base", adapter_dim: int = 256, freeze_base: bool = True):
+    def __init__(self, model_name="facebook/wav2vec2-base", adapter_dim: int = 512, freeze_base: bool = True):
         super().__init__()
         self.feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(model_name)
         self.encoder = Wav2Vec2Model.from_pretrained(model_name)
