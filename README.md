@@ -165,10 +165,10 @@ Current results on RAVDESS validation set:
 If you use this code, please cite:
 
 ```bibtex
-@misc{multilingual_ser_2024,
+@misc{multilingual_ser_2025,
   title={Multilingual Multimodal Speech Emotion Recognition},
   author={Kanan Mittal},
-  year={2024},
+  year={2025},
   url={https://github.com/kananmittal/Multilingual-Multimodal-Speech-Emotion-Recognition}
 }
 ```
